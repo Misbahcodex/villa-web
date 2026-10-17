@@ -27,8 +27,185 @@
   ],
   "bookings": [
     {
-      "id": "b-1792173836892-nhu2z",
-      "ref": "RZQ-FJRQJ5",
+      "id": "b-1792253420358-s0yuf",
+      "ref": "RZQ-X95XHB",
+      "roomTypeId": "deluxe-double-capsule",
+      "checkIn": "2026-11-20",
+      "checkOut": "2026-11-24",
+      "adults": 1,
+      "children": 0,
+      "guestName": "Status Workflow Guest",
+      "guestPhone": "+971 50 3072236",
+      "guestEmail": null,
+      "notes": "",
+      "promoCode": "RIZQDIRECT",
+      "estimatedTotalAED": 884,
+      "addons": [],
+      "status": "declined",
+      "holdExpiresAt": null,
+      "source": "website",
+      "ip": "198.51.100.210",
+      "createdAt": "2026-10-17T16:10:20.358Z",
+      "updatedAt": "2026-10-17T16:10:20.410Z",
+      "declineReason": "Admin test decline reason"
+    },
+    {
+      "id": "b-1792253403610-2x31y",
+      "ref": "RZQ-PK7YC3",
+      "roomTypeId": "deluxe-double-capsule",
+      "checkIn": "2027-05-10",
+      "checkOut": "2027-05-13",
+      "adults": 2,
+      "children": 0,
+      "guestName": "Lookup Guest",
+      "guestPhone": "+971506115826",
+      "guestEmail": "lookup@test.com",
+      "notes": "",
+      "promoCode": "RIZQDIRECT",
+      "estimatedTotalAED": 663,
+      "addons": [],
+      "status": "pending",
+      "holdExpiresAt": "2026-10-18T04:10:03.610Z",
+      "source": "website",
+      "ip": "198.51.100.218",
+      "createdAt": "2026-10-17T16:10:03.610Z",
+      "updatedAt": "2026-10-17T16:10:03.610Z"
+    },
+    {
+      "id": "b-1792253403299-li9e6",
+      "ref": "RZQ-TY2H3H",
+      "roomTypeId": "premium-single-capsule",
+      "checkIn": "2027-03-01",
+      "checkOut": "2027-03-03",
+      "adults": 1,
+      "children": 0,
+      "guestName": "Spammer 1",
+      "guestPhone": "+971507771000",
+      "guestEmail": null,
+      "notes": "",
+      "promoCode": "RIZQDIRECT",
+      "estimatedTotalAED": 306,
+      "addons": [],
+      "status": "pending",
+      "holdExpiresAt": "2026-10-18T04:10:03.299Z",
+      "source": "website",
+      "ip": "172.16.50.45",
+      "createdAt": "2026-10-17T16:10:03.299Z",
+      "updatedAt": "2026-10-17T16:10:03.299Z"
+    },
+    {
+      "id": "b-1792253403289-4z59k",
+      "ref": "RZQ-8K8QK9",
+      "roomTypeId": "premium-single-capsule",
+      "checkIn": "2027-03-01",
+      "checkOut": "2027-03-03",
+      "adults": 1,
+      "children": 0,
+      "guestName": "Spammer 0",
+      "guestPhone": "+971507770000",
+      "guestEmail": null,
+      "notes": "",
+      "promoCode": "RIZQDIRECT",
+      "estimatedTotalAED": 306,
+      "addons": [],
+      "status": "pending",
+      "holdExpiresAt": "2026-10-18T04:10:03.289Z",
+      "source": "website",
+      "ip": "172.16.50.45",
+      "createdAt": "2026-10-17T16:10:03.289Z",
+      "updatedAt": "2026-10-17T16:10:03.289Z"
+    },
+    {
+      "id": "b-1792253403252-20bae",
+      "ref": "RZQ-RVN2HH",
+      "roomTypeId": "premium-single-capsule",
+      "checkIn": "2027-02-08",
+      "checkOut": "2027-02-10",
+      "adults": 1,
+      "children": 0,
+      "guestName": "Active Guest Hold 2",
+      "guestPhone": "+971506022378",
+      "guestEmail": null,
+      "notes": "",
+      "promoCode": "RIZQDIRECT",
+      "estimatedTotalAED": 306,
+      "addons": [],
+      "status": "pending",
+      "holdExpiresAt": "2026-10-18T04:10:03.252Z",
+      "source": "website",
+      "ip": "10.20.174.158",
+      "createdAt": "2026-10-17T16:10:03.252Z",
+      "updatedAt": "2026-10-17T16:10:03.252Z"
+    },
+    {
+      "id": "b-1792253403241-f270z",
+      "ref": "RZQ-3TRBZ6",
+      "roomTypeId": "premium-single-capsule",
+      "checkIn": "2027-02-05",
+      "checkOut": "2027-02-07",
+      "adults": 1,
+      "children": 0,
+      "guestName": "Active Guest Hold 1",
+      "guestPhone": "+971506022378",
+      "guestEmail": null,
+      "notes": "",
+      "promoCode": "RIZQDIRECT",
+      "estimatedTotalAED": 306,
+      "addons": [],
+      "status": "pending",
+      "holdExpiresAt": "2026-10-18T04:10:03.241Z",
+      "source": "website",
+      "ip": "10.20.174.158",
+      "createdAt": "2026-10-17T16:10:03.241Z",
+      "updatedAt": "2026-10-17T16:10:03.242Z"
+    },
+    {
+      "id": "b-1792253403159-79cwp",
+      "ref": "RZQ-QTPBGN",
+      "roomTypeId": "executive-private-suite",
+      "checkIn": "2027-01-12",
+      "checkOut": "2027-01-14",
+      "adults": 1,
+      "children": 0,
+      "guestName": "Concurrent Guest 1",
+      "guestPhone": "+971501110000",
+      "guestEmail": null,
+      "notes": "",
+      "promoCode": "RIZQDIRECT",
+      "estimatedTotalAED": 918,
+      "addons": [],
+      "status": "pending",
+      "holdExpiresAt": "2026-10-18T04:10:03.159Z",
+      "source": "website",
+      "ip": "192.168.120.1",
+      "createdAt": "2026-10-17T16:10:03.159Z",
+      "updatedAt": "2026-10-17T16:10:03.159Z"
+    },
+    {
+      "id": "b-1792253402810-hg9ch",
+      "ref": "RZQ-JCFVK8",
+      "roomTypeId": "deluxe-double-capsule",
+      "checkIn": "2026-10-18",
+      "checkOut": "2026-10-21",
+      "adults": 1,
+      "children": 0,
+      "guestName": "Tariq Mansoor",
+      "guestPhone": "+971 52 839 8948",
+      "guestEmail": "tariq@nomad.tech",
+      "notes": "",
+      "promoCode": "RIZQDIRECT",
+      "estimatedTotalAED": 663,
+      "addons": [],
+      "status": "pending",
+      "holdExpiresAt": "2026-10-18T04:10:02.810Z",
+      "source": "website",
+      "ip": "198.51.100.116",
+      "createdAt": "2026-10-17T16:10:02.810Z",
+      "updatedAt": "2026-10-17T16:10:02.810Z"
+    },
+    {
+      "id": "b-1792253283605-ijo6p",
+      "ref": "RZQ-8PDTKY",
       "roomTypeId": "executive-private-suite",
       "checkIn": "2026-12-01",
       "checkOut": "2026-12-05",
@@ -42,13 +219,24 @@
       "estimatedTotalAED": 2160,
       "addons": [],
       "status": "pending",
-      "holdExpiresAt": "2026-10-17T06:03:56.892Z",
+      "holdExpiresAt": "2026-10-18T04:08:03.604Z",
       "source": "website",
-      "createdAt": "2026-10-16T18:03:56.892Z",
-      "updatedAt": "2026-10-16T18:03:56.892Z"
+      "createdAt": "2026-10-17T16:08:03.605Z",
+      "updatedAt": "2026-10-17T16:08:03.605Z"
     }
   ],
-  "blocks": [],
+  "blocks": [
+    {
+      "id": "blk-1792253420467-7w3f",
+      "roomTypeId": "executive-private-suite",
+      "startDate": "2026-12-18",
+      "endDate": "2026-12-22",
+      "units": 2,
+      "reason": "Scheduled Annual Maintenance",
+      "source": "manual",
+      "createdAt": "2026-10-17T16:10:20.467Z"
+    }
+  ],
   "icalFeeds": [
     {
       "id": "feed-001",
@@ -62,26 +250,163 @@
   ],
   "auditLogs": [
     {
-      "id": "log-1792173836892-wmghn",
-      "bookingId": "b-1792173836892-nhu2z",
+      "id": "log-1792253420467-y7wed",
+      "bookingId": null,
+      "actor": "admin",
+      "action": "created_block",
+      "meta": {
+        "blockId": "blk-1792253420467-7w3f",
+        "roomTypeId": "executive-private-suite",
+        "dates": "2026-12-18 to 2026-12-22"
+      },
+      "createdAt": "2026-10-17T16:10:20.467Z"
+    },
+    {
+      "id": "log-1792253420410-mmn47",
+      "bookingId": "b-1792253420358-s0yuf",
+      "actor": "admin",
+      "action": "declined",
+      "meta": {
+        "ref": "RZQ-X95XHB",
+        "reason": "Admin test decline reason"
+      },
+      "createdAt": "2026-10-17T16:10:20.410Z"
+    },
+    {
+      "id": "log-1792253420391-wczo8",
+      "bookingId": "b-1792253420358-s0yuf",
+      "actor": "admin",
+      "action": "confirmed",
+      "meta": {
+        "ref": "RZQ-X95XHB"
+      },
+      "createdAt": "2026-10-17T16:10:20.391Z"
+    },
+    {
+      "id": "log-1792253420358-nv492",
+      "bookingId": "b-1792253420358-s0yuf",
       "actor": "guest",
       "action": "created_pending_hold",
       "meta": {
-        "ref": "RZQ-FJRQJ5",
-        "holdExpiresAt": "2026-10-17T06:03:56.892Z",
+        "ref": "RZQ-X95XHB",
+        "holdExpiresAt": "2026-10-18T04:10:20.358Z",
         "nights": 4,
         "source": "website"
       },
-      "createdAt": "2026-10-16T18:03:56.892Z"
+      "createdAt": "2026-10-17T16:10:20.358Z"
     },
     {
-      "id": "log-cleared-1792173836883",
+      "id": "log-1792253403610-depow",
+      "bookingId": "b-1792253403610-2x31y",
+      "actor": "guest",
+      "action": "created_pending_hold",
+      "meta": {
+        "ref": "RZQ-PK7YC3",
+        "holdExpiresAt": "2026-10-18T04:10:03.610Z",
+        "nights": 3,
+        "source": "website"
+      },
+      "createdAt": "2026-10-17T16:10:03.610Z"
+    },
+    {
+      "id": "log-1792253403299-1lz8i",
+      "bookingId": "b-1792253403299-li9e6",
+      "actor": "guest",
+      "action": "created_pending_hold",
+      "meta": {
+        "ref": "RZQ-TY2H3H",
+        "holdExpiresAt": "2026-10-18T04:10:03.299Z",
+        "nights": 2,
+        "source": "website"
+      },
+      "createdAt": "2026-10-17T16:10:03.299Z"
+    },
+    {
+      "id": "log-1792253403289-lbqso",
+      "bookingId": "b-1792253403289-4z59k",
+      "actor": "guest",
+      "action": "created_pending_hold",
+      "meta": {
+        "ref": "RZQ-8K8QK9",
+        "holdExpiresAt": "2026-10-18T04:10:03.289Z",
+        "nights": 2,
+        "source": "website"
+      },
+      "createdAt": "2026-10-17T16:10:03.289Z"
+    },
+    {
+      "id": "log-1792253403252-h7kqb",
+      "bookingId": "b-1792253403252-20bae",
+      "actor": "guest",
+      "action": "created_pending_hold",
+      "meta": {
+        "ref": "RZQ-RVN2HH",
+        "holdExpiresAt": "2026-10-18T04:10:03.252Z",
+        "nights": 2,
+        "source": "website"
+      },
+      "createdAt": "2026-10-17T16:10:03.252Z"
+    },
+    {
+      "id": "log-1792253403242-qvu6k",
+      "bookingId": "b-1792253403241-f270z",
+      "actor": "guest",
+      "action": "created_pending_hold",
+      "meta": {
+        "ref": "RZQ-3TRBZ6",
+        "holdExpiresAt": "2026-10-18T04:10:03.241Z",
+        "nights": 2,
+        "source": "website"
+      },
+      "createdAt": "2026-10-17T16:10:03.242Z"
+    },
+    {
+      "id": "log-1792253403159-zl7qp",
+      "bookingId": "b-1792253403159-79cwp",
+      "actor": "guest",
+      "action": "created_pending_hold",
+      "meta": {
+        "ref": "RZQ-QTPBGN",
+        "holdExpiresAt": "2026-10-18T04:10:03.159Z",
+        "nights": 2,
+        "source": "website"
+      },
+      "createdAt": "2026-10-17T16:10:03.159Z"
+    },
+    {
+      "id": "log-1792253402810-qxuyw",
+      "bookingId": "b-1792253402810-hg9ch",
+      "actor": "guest",
+      "action": "created_pending_hold",
+      "meta": {
+        "ref": "RZQ-JCFVK8",
+        "holdExpiresAt": "2026-10-18T04:10:02.810Z",
+        "nights": 3,
+        "source": "website"
+      },
+      "createdAt": "2026-10-17T16:10:02.810Z"
+    },
+    {
+      "id": "log-1792253283605-ehoy8",
+      "bookingId": "b-1792253283605-ijo6p",
+      "actor": "guest",
+      "action": "created_pending_hold",
+      "meta": {
+        "ref": "RZQ-8PDTKY",
+        "holdExpiresAt": "2026-10-18T04:08:03.604Z",
+        "nights": 4,
+        "source": "website"
+      },
+      "createdAt": "2026-10-17T16:08:03.605Z"
+    },
+    {
+      "id": "log-cleared-1792253283597",
       "actor": "admin",
       "action": "cleared_demo_data",
       "meta": {
-        "timestamp": "2026-10-16T18:03:56.883Z"
+        "timestamp": "2026-10-17T16:08:03.597Z"
       },
-      "createdAt": "2026-10-16T18:03:56.883Z"
+      "createdAt": "2026-10-17T16:08:03.597Z"
     }
   ],
   "propertyFacts": {
@@ -149,36 +474,32 @@
       ]
     },
     "freeParking": {
-      "value": null,
-      "status": "unconfirmed",
+      "value": true,
+      "status": "confirmed",
       "sources": [
-        "Mentioned in some descriptions, parking availability unconfirmed."
-      ],
-      "note": "On-site parking spaces vs street parking unconfirmed."
+        "Official Instagram @altajalraea: Free Parking included on-site."
+      ]
     },
     "selfServeLaundry": {
-      "value": null,
-      "status": "unconfirmed",
+      "value": true,
+      "status": "confirmed",
       "sources": [
-        "Mentioned in some descriptions as self-serve laundry, unconfirmed."
-      ],
-      "note": "Washer/dryer availability and fees unconfirmed."
+        "Official Instagram @altajalraea: Laundry Room on-site."
+      ]
     },
     "gym": {
-      "value": null,
-      "status": "unconfirmed",
+      "value": true,
+      "status": "confirmed",
       "sources": [
-        "Unconfirmed facility."
-      ],
-      "note": "No gym or fitness equipment verified on property."
+        "Official Instagram @altajalraea: Gym Basics (Full Gym Coming Soon)."
+      ]
     },
     "shuttle": {
-      "value": null,
-      "status": "unconfirmed",
+      "value": true,
+      "status": "confirmed",
       "sources": [
-        "Mentioned in some listings, no official vehicle or schedule confirmed."
-      ],
-      "note": "Transfer service unconfirmed; request only."
+        "Official Instagram @altajalraea: Free Shuttle to Metro (Morning & Evening)."
+      ]
     }
   },
   "blockedPhoneNumbers": []

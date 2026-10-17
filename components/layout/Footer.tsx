@@ -59,7 +59,7 @@ export function Footer() {
               </span>
             </div>
             <p className="text-muted-dark text-xs leading-relaxed font-light">
-              Boutique villa-hostel and coworking residence in Dubai. Al Quoz / Business Bay border near Downtown Dubai.
+              Boutique villa residence and coworking coliving in Business Bay, Dubai. Operated by Al Taj Al Raea — Luxury Within Reach.
             </p>
           </div>
 
@@ -96,13 +96,13 @@ export function Footer() {
                 <span className="text-accent">•</span> Adults only residence
               </li>
               <li className="flex items-center gap-2">
+                <span className="text-accent">•</span> Free Metro shuttle service
+              </li>
+              <li className="flex items-center gap-2">
                 <span className="text-accent">•</span> 500 Mbps high-speed Wi-Fi
               </li>
               <li className="flex items-center gap-2">
-                <span className="text-accent">•</span> Outdoor pool & lounge
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="text-accent">•</span> Direct booking advantage
+                <span className="text-accent">•</span> Outdoor pool, gym &amp; kitchen
               </li>
             </ul>
           </div>

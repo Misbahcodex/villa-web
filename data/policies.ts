@@ -130,33 +130,29 @@ export const propertyPolicies: PropertyPolicies = {
     sources: ["Client brief: high-speed 500 Mbps connection."],
   },
 
-  // Unconfirmed amenities from third-party listings
+  // Verified amenities confirmed via official Instagram (@altajalraea)
   freeParking: {
-    value: null,
-    status: "unconfirmed",
-    sources: ["Mentioned in some descriptions, parking availability unconfirmed."],
-    note: "On-site parking spaces vs street parking unconfirmed.",
+    value: true,
+    status: "confirmed",
+    sources: ["Official Instagram @altajalraea: Free Parking included on-site."],
   },
 
   selfServeLaundry: {
-    value: null,
-    status: "unconfirmed",
-    sources: ["Mentioned in some descriptions as self-serve laundry, unconfirmed."],
-    note: "Washer/dryer availability and fees unconfirmed.",
+    value: true,
+    status: "confirmed",
+    sources: ["Official Instagram @altajalraea: Laundry Room on-site."],
   },
 
   gym: {
-    value: null,
-    status: "unconfirmed",
-    sources: ["Unconfirmed facility."],
-    note: "No gym or fitness equipment verified on property.",
+    value: true,
+    status: "confirmed",
+    sources: ["Official Instagram @altajalraea: Gym Basics (Full Gym Coming Soon)."],
   },
 
   shuttle: {
-    value: null,
-    status: "unconfirmed",
-    sources: ["Mentioned in some listings, no official vehicle or schedule confirmed."],
-    note: "Transfer service unconfirmed; request only.",
+    value: true,
+    status: "confirmed",
+    sources: ["Official Instagram @altajalraea: Free Shuttle to Metro (Morning & Evening)."],
   },
 
   paymentPolicy: {

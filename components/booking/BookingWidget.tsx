@@ -427,6 +427,27 @@ export function BookingWidget({
         </div>
       </div>
 
+      {/* Monthly Stay Announcement Ribbon */}
+      <div className="bg-surface border border-accent/30 p-3 rounded-sm flex flex-wrap items-center justify-between gap-2 text-xs font-mono">
+        <div className="flex items-center gap-2">
+          <span className="text-accent">★</span>
+          <span className="text-on-dark font-sans text-xs">
+            Monthly stays available from <strong>AED 1,400 / month</strong> all-inclusive in Business Bay.
+          </span>
+        </div>
+        <a
+          href={`https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent(
+            "Hello, I am interested in booking a monthly stay (AED 1,400/month) at RizQ Villa."
+          )}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-accent hover:text-accent-strong text-[11px] underline underline-offset-4 flex items-center gap-1 shrink-0"
+        >
+          <span>Inquire on WhatsApp</span>
+          <span aria-hidden="true">→</span>
+        </a>
+      </div>
+
       {/* Step 1: Date Range Picker */}
       <div className="space-y-3 font-mono">
         <div className="flex items-center justify-between">

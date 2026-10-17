@@ -73,14 +73,17 @@ describe("Verification-Status Model & Adults-Only Policy Tests", () => {
 
       expect(showPolicy(propertyPolicies.checkInWindow)).toBe(fallbackText);
       expect(showPolicy(propertyPolicies.checkOutTime)).toBe(fallbackText);
-      expect(showPolicy(propertyPolicies.gym)).toBe(fallbackText);
-      expect(showPolicy(propertyPolicies.shuttle)).toBe(fallbackText);
+      expect(showPolicy(propertyPolicies.paymentPolicy)).toBe(fallbackText);
     });
 
     it("returns stringified value only when status is confirmed", () => {
       expect(showPolicy(propertyPolicies.outdoorPool)).toBe("true");
       expect(showPolicy(propertyPolicies.coworking)).toBe("true");
       expect(showPolicy(propertyPolicies.wifiMbps)).toBe("500");
+      expect(showPolicy(propertyPolicies.gym)).toBe("true");
+      expect(showPolicy(propertyPolicies.shuttle)).toBe("true");
+      expect(showPolicy(propertyPolicies.freeParking)).toBe("true");
+      expect(showPolicy(propertyPolicies.selfServeLaundry)).toBe("true");
 
       const confirmedCheckIn: Verified<string> = {
         value: "15:00 – 23:00",
@@ -91,30 +94,12 @@ describe("Verification-Status Model & Adults-Only Policy Tests", () => {
   });
 
   describe("4. Amenity Inclusions Rule", () => {
-    it("public secondary amenities omit unconfirmed items (gym, parking, laundry, shuttle)", () => {
+    it("public secondary amenities include confirmed items (gym, parking, laundry, shuttle)", () => {
       const titles = secondaryAmenities.map((a) => a.title.toLowerCase());
-      const descriptions = secondaryAmenities.map((a) => a.description.toLowerCase());
-      const icons = secondaryAmenities.map((a) => a.icon.toLowerCase());
-
-      titles.forEach((t) => {
-        expect(t).not.toContain("gym");
-        expect(t).not.toContain("parking");
-        expect(t).not.toContain("laundry");
-        expect(t).not.toContain("shuttle");
-      });
-
-      descriptions.forEach((d) => {
-        expect(d).not.toContain("gym");
-        expect(d).not.toContain("parking");
-        expect(d).not.toContain("laundry");
-        expect(d).not.toContain("shuttle");
-      });
-
-      icons.forEach((icon) => {
-        expect(icon).not.toBe("shirt");
-        expect(icon).not.toBe("car");
-        expect(icon).not.toBe("dumbbell");
-      });
+      expect(titles.some((t) => t.includes("gym"))).toBe(true);
+      expect(titles.some((t) => t.includes("parking"))).toBe(true);
+      expect(titles.some((t) => t.includes("laundry"))).toBe(true);
+      expect(titles.some((t) => t.includes("shuttle"))).toBe(true);
     });
 
     it("shuttle add-on is disabled by default and has price 0", () => {
@@ -172,7 +157,7 @@ describe("Verification-Status Model & Adults-Only Policy Tests", () => {
     it("countAwaitingConfirmation counts facts whose status is not confirmed", async () => {
       const facts = await getPropertyFacts();
       const awaiting = countAwaitingConfirmation(facts);
-      expect(awaiting).toBeGreaterThanOrEqual(7);
+      expect(awaiting).toBeGreaterThanOrEqual(3);
     });
 
     it("updatePropertyFact updates status and decreases awaiting count when confirmed", async () => {

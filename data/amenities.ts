@@ -64,28 +64,43 @@ export const amenityCategories: AmenityCategory[] = [
 
 export const secondaryAmenities = [
   {
-    title: "Secure Access",
-    description: "Secure entry to private capsules, suites, and villa grounds.",
+    title: "Free Metro Shuttle",
+    description: "Complimentary morning and evening shuttle connecting residents to the Dubai Metro.",
+    icon: "Bus",
+  },
+  {
+    title: "Free On-Site Parking",
+    description: "Dedicated parking spaces available for resident vehicles on the villa grounds.",
+    icon: "Car",
+  },
+  {
+    title: "Resident Laundry Room",
+    description: "Equipped on-site laundry facilities for easy resident garment care.",
+    icon: "Shirt",
+  },
+  {
+    title: "Gym Basics",
+    description: "Workout essentials and fitness training equipment on the villa grounds.",
+    icon: "Dumbbell",
+  },
+  {
+    title: "Equipped Kitchen & Dining",
+    description: "Full resident kitchen with cookware, appliances, and shared dining tables.",
+    icon: "Utensils",
+  },
+  {
+    title: "Study Lounge & PlayStation",
+    description: "Quiet library study zone, work desks, and PlayStation resident lounge.",
+    icon: "Gamepad2",
+  },
+  {
+    title: "Secure Access & Lockers",
+    description: "Secure entry, private pods, personal lockable storage lockers.",
     icon: "KeyRound",
   },
   {
-    title: "Showers & Bathrooms",
-    description: "Clean, modern shared washroom facilities.",
-    icon: "ShowerHead",
-  },
-  {
-    title: "Luggage Storage",
-    description: "Luggage storage space available for early arrivals and late departures.",
-    icon: "ShieldAlert",
-  },
-  {
-    title: "Housekeeping",
-    description: "Regular housekeeping service maintaining clean spaces.",
-    icon: "Sparkles",
-  },
-  {
-    title: "Central Dubai Location",
-    description: "Situated on the Al Quoz / Business Bay border near Downtown Dubai and Burj Khalifa.",
+    title: "Business Bay Location",
+    description: "Central Business Bay location, minutes from Burj Khalifa and Dubai Mall.",
     icon: "Navigation",
   },
 ];

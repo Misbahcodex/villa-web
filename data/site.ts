@@ -2,8 +2,7 @@ import { SiteConfig, DirectBenefit } from "@/types";
 
 export const siteConfig: SiteConfig = {
   name: "Rizq Luxurious Villa",
-  // TODO: CONFIRM WITH CLIENT - WhatsApp contact number (digits only with country code, e.g. 971XXXXXXXXX)
-  whatsappNumber: "971500000000",
+  whatsappNumber: "971554678589",
   promoCode: "RIZQDIRECT",
   discountPercent: 15,
   rating: {
@@ -11,17 +10,14 @@ export const siteConfig: SiteConfig = {
     reviews: 2324,
     source: "Google",
   },
-  // TODO: CONFIRM WITH CLIENT - Exact street address and villa number
-  address: "Al Quoz / Business Bay Border, Dubai, United Arab Emirates",
-  locationNote: "Strategic position on the Al Quoz / Business Bay border, minutes from Downtown Dubai and Burj Khalifa.",
+  address: "Business Bay, Dubai, United Arab Emirates",
+  locationNote: "In the heart of Business Bay, Dubai — minutes from Burj Khalifa & Dubai Mall.",
   geo: {
     lat: 25.1575396,
     lng: 55.2702367,
   },
   currency: "AED",
-  // TODO: CONFIRM WITH CLIENT - Standard check-in and check-out times
   checkInTime: "15:00",
-  // TODO: CONFIRM WITH CLIENT - Standard check-out time
   checkOutTime: "11:00",
   // TODO: CONFIRM WITH CLIENT - Official contact and reservations email
   contactEmail: process.env.NEXT_PUBLIC_CONTACT_EMAIL || "reservations@example.com",

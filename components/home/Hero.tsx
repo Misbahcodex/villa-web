@@ -30,7 +30,7 @@ export function Hero() {
           <div className="flex items-center gap-3">
             <span className="w-6 h-px bg-accent" />
             <span className="text-[11px] font-mono tracking-widest uppercase text-accent">
-              Rizq Luxurious Villa • Dubai Sanctuary
+              Rizq Luxurious Villa • Business Bay, Dubai
             </span>
           </div>
 
@@ -39,8 +39,8 @@ export function Hero() {
           </h1>
 
           <p className="text-muted-dark text-sm sm:text-base md:text-lg max-w-2xl font-light leading-relaxed">
-            A serene boutique villa-hostel and coworking sanctuary on the Al Quoz / Business Bay border. 
-            Capsule pods, private suites, 500 Mbps Wi-Fi, an outdoor pool, and quiet social spaces for creators and travelers.
+            A boutique villa residence and coworking sanctuary in central Business Bay, minutes from Burj Khalifa. 
+            Capsule pods, private suites, 500 Mbps Wi-Fi, outdoor pool, resident kitchen, free metro shuttle, and quiet community spaces.
           </p>
         </div>
 
@@ -131,7 +131,7 @@ export function Hero() {
           <div className="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 z-20 flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-6 text-[11px] font-mono tracking-widest uppercase text-on-dark/90 bg-base/80 backdrop-blur-md px-4 py-2 border border-subtle rounded-sm">
             <span>25.1867° N, 55.2530° E</span>
             <span className="hidden sm:inline text-accent">•</span>
-            <span>AL QUOZ / BUSINESS BAY • DUBAI</span>
+            <span>BUSINESS BAY • DUBAI</span>
           </div>
         </div>
 
