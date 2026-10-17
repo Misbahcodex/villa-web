@@ -58,7 +58,7 @@ export function JournalSection() {
           <div className="bg-surface border border-subtle p-8 rounded-sm space-y-4">
             <span className="text-accent font-serif text-2xl">03</span>
             <h3 className="font-serif text-xl text-on-dark font-normal">
-              4.7★ Verified Reputation
+              4.7★ Guest Reputation
             </h3>
             <p className="text-muted-dark text-xs sm:text-sm font-light leading-relaxed">
               Backed by 2,324 Google guest reviews. Consistent ratings for clean facilities, fast 500 Mbps internet, and quiet working atmosphere in central Dubai.
@@ -71,7 +71,7 @@ export function JournalSection() {
           <div className="space-y-1">
             <h4 className="font-serif text-xl text-on-dark font-medium">Ready to Plan Your Stay?</h4>
             <p className="text-muted-dark text-xs font-light">
-              Check real-time room availability or message our concierge directly.
+              Check room availability or message our concierge directly.
             </p>
           </div>
 

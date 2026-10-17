@@ -1,0 +1,1047 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\hp\\Desktop\\rizq-website\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/e2e/routes.spec.ts",
+      "--project=desktop-chrome"
+    ],
+    "configFile": "C:\\Users\\hp\\Desktop\\rizq-website\\playwright.config.ts",
+    "rootDir": "C:/Users/hp/Desktop/rizq-website/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/hp/Desktop/rizq-website/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "desktop-chrome",
+        "name": "desktop-chrome",
+        "testDir": "C:/Users/hp/Desktop/rizq-website/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 45000
+      },
+      {
+        "outputDir": "C:/Users/hp/Desktop/rizq-website/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "iphone-13",
+        "name": "iphone-13",
+        "testDir": "C:/Users/hp/Desktop/rizq-website/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 45000
+      },
+      {
+        "outputDir": "C:/Users/hp/Desktop/rizq-website/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "android-375",
+        "name": "android-375",
+        "testDir": "C:/Users/hp/Desktop/rizq-website/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 45000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\hp\\Desktop\\rizq-website\\test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "desktop-chrome",
+        "testDir": "C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e",
+        "snapshotDir": "C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 45000,
+        "use": {
+          "baseURL": "https://villa-web-easo.vercel.app",
+          "trace": "on-first-retry",
+          "screenshot": "only-on-failure",
+          "channel": "chrome",
+          "viewport": {
+            "width": 1440,
+            "height": 900
+          }
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "desktop-chrome"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "qa-report/playwright-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "routes.spec.ts",
+      "file": "routes.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Route Integrity & Content QA Suite",
+          "file": "routes.spec.ts",
+          "line": 30,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Route / (Home) satisfies all production & demo constraints",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 2827,
+                      "error": {
+                        "message": "Error: Image #3 (alt: \"Premium Single Capsule Pod sleeping compartment\") on / failed to render naturalWidth > 0\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
+                        "stack": "Error: Image #3 (alt: \"Premium Single Capsule Pod sleeping compartment\") on / failed to render naturalWidth > 0\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e\\routes.spec.ts:96:108",
+                        "location": {
+                          "file": "C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e\\routes.spec.ts",
+                          "column": 108,
+                          "line": 96
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 94 |\u001b[39m           \u001b[36mreturn\u001b[39m el\u001b[33m.\u001b[39mcomplete \u001b[33m&&\u001b[39m el\u001b[33m.\u001b[39mnaturalWidth \u001b[33m>\u001b[39m \u001b[35m0\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 95 |\u001b[39m         })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 96 |\u001b[39m         expect(isLoaded\u001b[33m,\u001b[39m \u001b[32m`Image #${i} (alt: \"${alt}\") on ${route.path} failed to render naturalWidth > 0`\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 97 |\u001b[39m       }\n \u001b[90m 98 |\u001b[39m\n \u001b[90m 99 |\u001b[39m       \u001b[90m// 5. Meta robots noindex,nofollow present\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e\\routes.spec.ts",
+                            "column": 108,
+                            "line": 96
+                          },
+                          "message": "Error: Image #3 (alt: \"Premium Single Capsule Pod sleeping compartment\") on / failed to render naturalWidth > 0\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n  94 |           return el.complete && el.naturalWidth > 0;\n  95 |         });\n> 96 |         expect(isLoaded, `Image #${i} (alt: \"${alt}\") on ${route.path} failed to render naturalWidth > 0`).toBe(true);\n     |                                                                                                            ^\n  97 |       }\n  98 |\n  99 |       // 5. Meta robots noindex,nofollow present\n    at C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e\\routes.spec.ts:96:108"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T13:47:25.049Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\hp\\Desktop\\rizq-website\\test-results\\routes-Route-Integrity-Con-f2751-production-demo-constraints-desktop-chrome\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\hp\\Desktop\\rizq-website\\test-results\\routes-Route-Integrity-Con-f2751-production-demo-constraints-desktop-chrome\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e\\routes.spec.ts",
+                        "column": 108,
+                        "line": 96
+                      }
+                    },
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 2251,
+                      "error": {
+                        "message": "Error: Console errors on /: Failed to load resource: the server responded with a status of 404 ()\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[\"Failed to load resource: the server responded with a status of 404 ()\"]\u001b[39m",
+                        "stack": "Error: Console errors on /: Failed to load resource: the server responded with a status of 404 ()\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[\"Failed to load resource: the server responded with a status of 404 ()\"]\u001b[39m\n    at C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e\\routes.spec.ts:71:105",
+                        "location": {
+                          "file": "C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e\\routes.spec.ts",
+                          "column": 105,
+                          "line": 71
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 69 |\u001b[39m         \u001b[36mreturn\u001b[39m \u001b[36mtrue\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 70 |\u001b[39m       })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 71 |\u001b[39m       expect(actualConsoleErrors\u001b[33m,\u001b[39m \u001b[32m`Console errors on ${route.path}: ${actualConsoleErrors.join(\", \")}`\u001b[39m)\u001b[33m.\u001b[39mtoHaveLength(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 72 |\u001b[39m       expect(failedRequests\u001b[33m,\u001b[39m \u001b[32m`Failed requests on ${route.path}: ${failedRequests.join(\", \")}`\u001b[39m)\u001b[33m.\u001b[39mtoHaveLength(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 73 |\u001b[39m\n \u001b[90m 74 |\u001b[39m       \u001b[90m// 2. No horizontal scroll\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e\\routes.spec.ts",
+                            "column": 105,
+                            "line": 71
+                          },
+                          "message": "Error: Console errors on /: Failed to load resource: the server responded with a status of 404 ()\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[\"Failed to load resource: the server responded with a status of 404 ()\"]\u001b[39m\n\n  69 |         return true;\n  70 |       });\n> 71 |       expect(actualConsoleErrors, `Console errors on ${route.path}: ${actualConsoleErrors.join(\", \")}`).toHaveLength(0);\n     |                                                                                                         ^\n  72 |       expect(failedRequests, `Failed requests on ${route.path}: ${failedRequests.join(\", \")}`).toHaveLength(0);\n  73 |\n  74 |       // 2. No horizontal scroll\n    at C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e\\routes.spec.ts:71:105"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-10-17T13:47:29.709Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\hp\\Desktop\\rizq-website\\test-results\\routes-Route-Integrity-Con-f2751-production-demo-constraints-desktop-chrome-retry1\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\hp\\Desktop\\rizq-website\\test-results\\routes-Route-Integrity-Con-f2751-production-demo-constraints-desktop-chrome-retry1\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\hp\\Desktop\\rizq-website\\test-results\\routes-Route-Integrity-Con-f2751-production-demo-constraints-desktop-chrome-retry1\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e\\routes.spec.ts",
+                        "column": 105,
+                        "line": 71
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "598fdabf36083b33787e-2e77d29d00b660f0d8c8",
+              "file": "routes.spec.ts",
+              "line": 32,
+              "column": 9
+            },
+            {
+              "title": "Route /rooms (Rooms) satisfies all production & demo constraints",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 3732,
+                      "error": {
+                        "message": "Error: Console errors on /rooms: Failed to load resource: the server responded with a status of 404 ()\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[\"Failed to load resource: the server responded with a status of 404 ()\"]\u001b[39m",
+                        "stack": "Error: Console errors on /rooms: Failed to load resource: the server responded with a status of 404 ()\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[\"Failed to load resource: the server responded with a status of 404 ()\"]\u001b[39m\n    at C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e\\routes.spec.ts:71:105",
+                        "location": {
+                          "file": "C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e\\routes.spec.ts",
+                          "column": 105,
+                          "line": 71
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 69 |\u001b[39m         \u001b[36mreturn\u001b[39m \u001b[36mtrue\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 70 |\u001b[39m       })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 71 |\u001b[39m       expect(actualConsoleErrors\u001b[33m,\u001b[39m \u001b[32m`Console errors on ${route.path}: ${actualConsoleErrors.join(\", \")}`\u001b[39m)\u001b[33m.\u001b[39mtoHaveLength(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 72 |\u001b[39m       expect(failedRequests\u001b[33m,\u001b[39m \u001b[32m`Failed requests on ${route.path}: ${failedRequests.join(\", \")}`\u001b[39m)\u001b[33m.\u001b[39mtoHaveLength(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 73 |\u001b[39m\n \u001b[90m 74 |\u001b[39m       \u001b[90m// 2. No horizontal scroll\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e\\routes.spec.ts",
+                            "column": 105,
+                            "line": 71
+                          },
+                          "message": "Error: Console errors on /rooms: Failed to load resource: the server responded with a status of 404 ()\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[\"Failed to load resource: the server responded with a status of 404 ()\"]\u001b[39m\n\n  69 |         return true;\n  70 |       });\n> 71 |       expect(actualConsoleErrors, `Console errors on ${route.path}: ${actualConsoleErrors.join(\", \")}`).toHaveLength(0);\n     |                                                                                                         ^\n  72 |       expect(failedRequests, `Failed requests on ${route.path}: ${failedRequests.join(\", \")}`).toHaveLength(0);\n  73 |\n  74 |       // 2. No horizontal scroll\n    at C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e\\routes.spec.ts:71:105"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T13:47:34.116Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\hp\\Desktop\\rizq-website\\test-results\\routes-Route-Integrity-Con-1e720-production-demo-constraints-desktop-chrome\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\hp\\Desktop\\rizq-website\\test-results\\routes-Route-Integrity-Con-1e720-production-demo-constraints-desktop-chrome\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e\\routes.spec.ts",
+                        "column": 105,
+                        "line": 71
+                      }
+                    },
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 3413,
+                      "error": {
+                        "message": "Error: Console errors on /rooms: Failed to load resource: the server responded with a status of 404 ()\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[\"Failed to load resource: the server responded with a status of 404 ()\"]\u001b[39m",
+                        "stack": "Error: Console errors on /rooms: Failed to load resource: the server responded with a status of 404 ()\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[\"Failed to load resource: the server responded with a status of 404 ()\"]\u001b[39m\n    at C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e\\routes.spec.ts:71:105",
+                        "location": {
+                          "file": "C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e\\routes.spec.ts",
+                          "column": 105,
+                          "line": 71
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 69 |\u001b[39m         \u001b[36mreturn\u001b[39m \u001b[36mtrue\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 70 |\u001b[39m       })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 71 |\u001b[39m       expect(actualConsoleErrors\u001b[33m,\u001b[39m \u001b[32m`Console errors on ${route.path}: ${actualConsoleErrors.join(\", \")}`\u001b[39m)\u001b[33m.\u001b[39mtoHaveLength(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 72 |\u001b[39m       expect(failedRequests\u001b[33m,\u001b[39m \u001b[32m`Failed requests on ${route.path}: ${failedRequests.join(\", \")}`\u001b[39m)\u001b[33m.\u001b[39mtoHaveLength(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 73 |\u001b[39m\n \u001b[90m 74 |\u001b[39m       \u001b[90m// 2. No horizontal scroll\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e\\routes.spec.ts",
+                            "column": 105,
+                            "line": 71
+                          },
+                          "message": "Error: Console errors on /rooms: Failed to load resource: the server responded with a status of 404 ()\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[\"Failed to load resource: the server responded with a status of 404 ()\"]\u001b[39m\n\n  69 |         return true;\n  70 |       });\n> 71 |       expect(actualConsoleErrors, `Console errors on ${route.path}: ${actualConsoleErrors.join(\", \")}`).toHaveLength(0);\n     |                                                                                                         ^\n  72 |       expect(failedRequests, `Failed requests on ${route.path}: ${failedRequests.join(\", \")}`).toHaveLength(0);\n  73 |\n  74 |       // 2. No horizontal scroll\n    at C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e\\routes.spec.ts:71:105"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-10-17T13:47:39.801Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\hp\\Desktop\\rizq-website\\test-results\\routes-Route-Integrity-Con-1e720-production-demo-constraints-desktop-chrome-retry1\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\hp\\Desktop\\rizq-website\\test-results\\routes-Route-Integrity-Con-1e720-production-demo-constraints-desktop-chrome-retry1\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\hp\\Desktop\\rizq-website\\test-results\\routes-Route-Integrity-Con-1e720-production-demo-constraints-desktop-chrome-retry1\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e\\routes.spec.ts",
+                        "column": 105,
+                        "line": 71
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "598fdabf36083b33787e-00b510939052e2f2da01",
+              "file": "routes.spec.ts",
+              "line": 32,
+              "column": 9
+            },
+            {
+              "title": "Route /book (Book) satisfies all production & demo constraints",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 6946,
+                      "error": {
+                        "message": "Error: Console errors on /book: Failed to load resource: the server responded with a status of 404 ()\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[\"Failed to load resource: the server responded with a status of 404 ()\"]\u001b[39m",
+                        "stack": "Error: Console errors on /book: Failed to load resource: the server responded with a status of 404 ()\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[\"Failed to load resource: the server responded with a status of 404 ()\"]\u001b[39m\n    at C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e\\routes.spec.ts:71:105",
+                        "location": {
+                          "file": "C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e\\routes.spec.ts",
+                          "column": 105,
+                          "line": 71
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 69 |\u001b[39m         \u001b[36mreturn\u001b[39m \u001b[36mtrue\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 70 |\u001b[39m       })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 71 |\u001b[39m       expect(actualConsoleErrors\u001b[33m,\u001b[39m \u001b[32m`Console errors on ${route.path}: ${actualConsoleErrors.join(\", \")}`\u001b[39m)\u001b[33m.\u001b[39mtoHaveLength(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 72 |\u001b[39m       expect(failedRequests\u001b[33m,\u001b[39m \u001b[32m`Failed requests on ${route.path}: ${failedRequests.join(\", \")}`\u001b[39m)\u001b[33m.\u001b[39mtoHaveLength(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 73 |\u001b[39m\n \u001b[90m 74 |\u001b[39m       \u001b[90m// 2. No horizontal scroll\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e\\routes.spec.ts",
+                            "column": 105,
+                            "line": 71
+                          },
+                          "message": "Error: Console errors on /book: Failed to load resource: the server responded with a status of 404 ()\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[\"Failed to load resource: the server responded with a status of 404 ()\"]\u001b[39m\n\n  69 |         return true;\n  70 |       });\n> 71 |       expect(actualConsoleErrors, `Console errors on ${route.path}: ${actualConsoleErrors.join(\", \")}`).toHaveLength(0);\n     |                                                                                                         ^\n  72 |       expect(failedRequests, `Failed requests on ${route.path}: ${failedRequests.join(\", \")}`).toHaveLength(0);\n  73 |\n  74 |       // 2. No horizontal scroll\n    at C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e\\routes.spec.ts:71:105"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T13:47:45.194Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\hp\\Desktop\\rizq-website\\test-results\\routes-Route-Integrity-Con-5cee7-production-demo-constraints-desktop-chrome\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\hp\\Desktop\\rizq-website\\test-results\\routes-Route-Integrity-Con-5cee7-production-demo-constraints-desktop-chrome\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e\\routes.spec.ts",
+                        "column": 105,
+                        "line": 71
+                      }
+                    },
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 2501,
+                      "error": {
+                        "message": "Error: Console errors on /book: Failed to load resource: the server responded with a status of 404 ()\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[\"Failed to load resource: the server responded with a status of 404 ()\"]\u001b[39m",
+                        "stack": "Error: Console errors on /book: Failed to load resource: the server responded with a status of 404 ()\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[\"Failed to load resource: the server responded with a status of 404 ()\"]\u001b[39m\n    at C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e\\routes.spec.ts:71:105",
+                        "location": {
+                          "file": "C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e\\routes.spec.ts",
+                          "column": 105,
+                          "line": 71
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 69 |\u001b[39m         \u001b[36mreturn\u001b[39m \u001b[36mtrue\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 70 |\u001b[39m       })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 71 |\u001b[39m       expect(actualConsoleErrors\u001b[33m,\u001b[39m \u001b[32m`Console errors on ${route.path}: ${actualConsoleErrors.join(\", \")}`\u001b[39m)\u001b[33m.\u001b[39mtoHaveLength(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 72 |\u001b[39m       expect(failedRequests\u001b[33m,\u001b[39m \u001b[32m`Failed requests on ${route.path}: ${failedRequests.join(\", \")}`\u001b[39m)\u001b[33m.\u001b[39mtoHaveLength(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 73 |\u001b[39m\n \u001b[90m 74 |\u001b[39m       \u001b[90m// 2. No horizontal scroll\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e\\routes.spec.ts",
+                            "column": 105,
+                            "line": 71
+                          },
+                          "message": "Error: Console errors on /book: Failed to load resource: the server responded with a status of 404 ()\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[\"Failed to load resource: the server responded with a status of 404 ()\"]\u001b[39m\n\n  69 |         return true;\n  70 |       });\n> 71 |       expect(actualConsoleErrors, `Console errors on ${route.path}: ${actualConsoleErrors.join(\", \")}`).toHaveLength(0);\n     |                                                                                                         ^\n  72 |       expect(failedRequests, `Failed requests on ${route.path}: ${failedRequests.join(\", \")}`).toHaveLength(0);\n  73 |\n  74 |       // 2. No horizontal scroll\n    at C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e\\routes.spec.ts:71:105"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-10-17T13:47:54.063Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\hp\\Desktop\\rizq-website\\test-results\\routes-Route-Integrity-Con-5cee7-production-demo-constraints-desktop-chrome-retry1\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\hp\\Desktop\\rizq-website\\test-results\\routes-Route-Integrity-Con-5cee7-production-demo-constraints-desktop-chrome-retry1\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\hp\\Desktop\\rizq-website\\test-results\\routes-Route-Integrity-Con-5cee7-production-demo-constraints-desktop-chrome-retry1\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e\\routes.spec.ts",
+                        "column": 105,
+                        "line": 71
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "598fdabf36083b33787e-15c9ea58491be613c62a",
+              "file": "routes.spec.ts",
+              "line": 32,
+              "column": 9
+            },
+            {
+              "title": "Route /amenities (Amenities) satisfies all production & demo constraints",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 1862,
+                      "error": {
+                        "message": "Error: Console errors on /amenities: Failed to load resource: the server responded with a status of 404 ()\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[\"Failed to load resource: the server responded with a status of 404 ()\"]\u001b[39m",
+                        "stack": "Error: Console errors on /amenities: Failed to load resource: the server responded with a status of 404 ()\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[\"Failed to load resource: the server responded with a status of 404 ()\"]\u001b[39m\n    at C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e\\routes.spec.ts:71:105",
+                        "location": {
+                          "file": "C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e\\routes.spec.ts",
+                          "column": 105,
+                          "line": 71
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 69 |\u001b[39m         \u001b[36mreturn\u001b[39m \u001b[36mtrue\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 70 |\u001b[39m       })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 71 |\u001b[39m       expect(actualConsoleErrors\u001b[33m,\u001b[39m \u001b[32m`Console errors on ${route.path}: ${actualConsoleErrors.join(\", \")}`\u001b[39m)\u001b[33m.\u001b[39mtoHaveLength(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 72 |\u001b[39m       expect(failedRequests\u001b[33m,\u001b[39m \u001b[32m`Failed requests on ${route.path}: ${failedRequests.join(\", \")}`\u001b[39m)\u001b[33m.\u001b[39mtoHaveLength(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 73 |\u001b[39m\n \u001b[90m 74 |\u001b[39m       \u001b[90m// 2. No horizontal scroll\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e\\routes.spec.ts",
+                            "column": 105,
+                            "line": 71
+                          },
+                          "message": "Error: Console errors on /amenities: Failed to load resource: the server responded with a status of 404 ()\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[\"Failed to load resource: the server responded with a status of 404 ()\"]\u001b[39m\n\n  69 |         return true;\n  70 |       });\n> 71 |       expect(actualConsoleErrors, `Console errors on ${route.path}: ${actualConsoleErrors.join(\", \")}`).toHaveLength(0);\n     |                                                                                                         ^\n  72 |       expect(failedRequests, `Failed requests on ${route.path}: ${failedRequests.join(\", \")}`).toHaveLength(0);\n  73 |\n  74 |       // 2. No horizontal scroll\n    at C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e\\routes.spec.ts:71:105"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T13:47:58.721Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\hp\\Desktop\\rizq-website\\test-results\\routes-Route-Integrity-Con-08319-production-demo-constraints-desktop-chrome\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\hp\\Desktop\\rizq-website\\test-results\\routes-Route-Integrity-Con-08319-production-demo-constraints-desktop-chrome\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e\\routes.spec.ts",
+                        "column": 105,
+                        "line": 71
+                      }
+                    },
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 2275,
+                      "error": {
+                        "message": "Error: Console errors on /amenities: Failed to load resource: the server responded with a status of 404 ()\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[\"Failed to load resource: the server responded with a status of 404 ()\"]\u001b[39m",
+                        "stack": "Error: Console errors on /amenities: Failed to load resource: the server responded with a status of 404 ()\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[\"Failed to load resource: the server responded with a status of 404 ()\"]\u001b[39m\n    at C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e\\routes.spec.ts:71:105",
+                        "location": {
+                          "file": "C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e\\routes.spec.ts",
+                          "column": 105,
+                          "line": 71
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 69 |\u001b[39m         \u001b[36mreturn\u001b[39m \u001b[36mtrue\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 70 |\u001b[39m       })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 71 |\u001b[39m       expect(actualConsoleErrors\u001b[33m,\u001b[39m \u001b[32m`Console errors on ${route.path}: ${actualConsoleErrors.join(\", \")}`\u001b[39m)\u001b[33m.\u001b[39mtoHaveLength(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 72 |\u001b[39m       expect(failedRequests\u001b[33m,\u001b[39m \u001b[32m`Failed requests on ${route.path}: ${failedRequests.join(\", \")}`\u001b[39m)\u001b[33m.\u001b[39mtoHaveLength(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 73 |\u001b[39m\n \u001b[90m 74 |\u001b[39m       \u001b[90m// 2. No horizontal scroll\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e\\routes.spec.ts",
+                            "column": 105,
+                            "line": 71
+                          },
+                          "message": "Error: Console errors on /amenities: Failed to load resource: the server responded with a status of 404 ()\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[\"Failed to load resource: the server responded with a status of 404 ()\"]\u001b[39m\n\n  69 |         return true;\n  70 |       });\n> 71 |       expect(actualConsoleErrors, `Console errors on ${route.path}: ${actualConsoleErrors.join(\", \")}`).toHaveLength(0);\n     |                                                                                                         ^\n  72 |       expect(failedRequests, `Failed requests on ${route.path}: ${failedRequests.join(\", \")}`).toHaveLength(0);\n  73 |\n  74 |       // 2. No horizontal scroll\n    at C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e\\routes.spec.ts:71:105"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-10-17T13:48:02.549Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\hp\\Desktop\\rizq-website\\test-results\\routes-Route-Integrity-Con-08319-production-demo-constraints-desktop-chrome-retry1\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\hp\\Desktop\\rizq-website\\test-results\\routes-Route-Integrity-Con-08319-production-demo-constraints-desktop-chrome-retry1\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\hp\\Desktop\\rizq-website\\test-results\\routes-Route-Integrity-Con-08319-production-demo-constraints-desktop-chrome-retry1\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e\\routes.spec.ts",
+                        "column": 105,
+                        "line": 71
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "598fdabf36083b33787e-00ad7c7d6ce2bc014a8f",
+              "file": "routes.spec.ts",
+              "line": 32,
+              "column": 9
+            },
+            {
+              "title": "Route /lookup (Lookup) satisfies all production & demo constraints",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 2241,
+                      "error": {
+                        "message": "Error: Console errors on /lookup: Failed to load resource: the server responded with a status of 404 ()\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[\"Failed to load resource: the server responded with a status of 404 ()\"]\u001b[39m",
+                        "stack": "Error: Console errors on /lookup: Failed to load resource: the server responded with a status of 404 ()\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[\"Failed to load resource: the server responded with a status of 404 ()\"]\u001b[39m\n    at C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e\\routes.spec.ts:71:105",
+                        "location": {
+                          "file": "C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e\\routes.spec.ts",
+                          "column": 105,
+                          "line": 71
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 69 |\u001b[39m         \u001b[36mreturn\u001b[39m \u001b[36mtrue\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 70 |\u001b[39m       })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 71 |\u001b[39m       expect(actualConsoleErrors\u001b[33m,\u001b[39m \u001b[32m`Console errors on ${route.path}: ${actualConsoleErrors.join(\", \")}`\u001b[39m)\u001b[33m.\u001b[39mtoHaveLength(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 72 |\u001b[39m       expect(failedRequests\u001b[33m,\u001b[39m \u001b[32m`Failed requests on ${route.path}: ${failedRequests.join(\", \")}`\u001b[39m)\u001b[33m.\u001b[39mtoHaveLength(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 73 |\u001b[39m\n \u001b[90m 74 |\u001b[39m       \u001b[90m// 2. No horizontal scroll\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e\\routes.spec.ts",
+                            "column": 105,
+                            "line": 71
+                          },
+                          "message": "Error: Console errors on /lookup: Failed to load resource: the server responded with a status of 404 ()\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[\"Failed to load resource: the server responded with a status of 404 ()\"]\u001b[39m\n\n  69 |         return true;\n  70 |       });\n> 71 |       expect(actualConsoleErrors, `Console errors on ${route.path}: ${actualConsoleErrors.join(\", \")}`).toHaveLength(0);\n     |                                                                                                         ^\n  72 |       expect(failedRequests, `Failed requests on ${route.path}: ${failedRequests.join(\", \")}`).toHaveLength(0);\n  73 |\n  74 |       // 2. No horizontal scroll\n    at C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e\\routes.spec.ts:71:105"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T13:48:06.880Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\hp\\Desktop\\rizq-website\\test-results\\routes-Route-Integrity-Con-16956-production-demo-constraints-desktop-chrome\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\hp\\Desktop\\rizq-website\\test-results\\routes-Route-Integrity-Con-16956-production-demo-constraints-desktop-chrome\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e\\routes.spec.ts",
+                        "column": 105,
+                        "line": 71
+                      }
+                    },
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 2235,
+                      "error": {
+                        "message": "Error: Console errors on /lookup: Failed to load resource: the server responded with a status of 404 ()\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[\"Failed to load resource: the server responded with a status of 404 ()\"]\u001b[39m",
+                        "stack": "Error: Console errors on /lookup: Failed to load resource: the server responded with a status of 404 ()\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[\"Failed to load resource: the server responded with a status of 404 ()\"]\u001b[39m\n    at C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e\\routes.spec.ts:71:105",
+                        "location": {
+                          "file": "C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e\\routes.spec.ts",
+                          "column": 105,
+                          "line": 71
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 69 |\u001b[39m         \u001b[36mreturn\u001b[39m \u001b[36mtrue\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 70 |\u001b[39m       })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 71 |\u001b[39m       expect(actualConsoleErrors\u001b[33m,\u001b[39m \u001b[32m`Console errors on ${route.path}: ${actualConsoleErrors.join(\", \")}`\u001b[39m)\u001b[33m.\u001b[39mtoHaveLength(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 72 |\u001b[39m       expect(failedRequests\u001b[33m,\u001b[39m \u001b[32m`Failed requests on ${route.path}: ${failedRequests.join(\", \")}`\u001b[39m)\u001b[33m.\u001b[39mtoHaveLength(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 73 |\u001b[39m\n \u001b[90m 74 |\u001b[39m       \u001b[90m// 2. No horizontal scroll\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e\\routes.spec.ts",
+                            "column": 105,
+                            "line": 71
+                          },
+                          "message": "Error: Console errors on /lookup: Failed to load resource: the server responded with a status of 404 ()\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[\"Failed to load resource: the server responded with a status of 404 ()\"]\u001b[39m\n\n  69 |         return true;\n  70 |       });\n> 71 |       expect(actualConsoleErrors, `Console errors on ${route.path}: ${actualConsoleErrors.join(\", \")}`).toHaveLength(0);\n     |                                                                                                         ^\n  72 |       expect(failedRequests, `Failed requests on ${route.path}: ${failedRequests.join(\", \")}`).toHaveLength(0);\n  73 |\n  74 |       // 2. No horizontal scroll\n    at C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e\\routes.spec.ts:71:105"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-10-17T13:48:11.167Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\hp\\Desktop\\rizq-website\\test-results\\routes-Route-Integrity-Con-16956-production-demo-constraints-desktop-chrome-retry1\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\hp\\Desktop\\rizq-website\\test-results\\routes-Route-Integrity-Con-16956-production-demo-constraints-desktop-chrome-retry1\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\hp\\Desktop\\rizq-website\\test-results\\routes-Route-Integrity-Con-16956-production-demo-constraints-desktop-chrome-retry1\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e\\routes.spec.ts",
+                        "column": 105,
+                        "line": 71
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "598fdabf36083b33787e-54bc7f07f7a5f6b970f8",
+              "file": "routes.spec.ts",
+              "line": 32,
+              "column": 9
+            },
+            {
+              "title": "Route /admin (Admin) satisfies all production & demo constraints",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 1768,
+                      "error": {
+                        "message": "Error: Console errors on /admin: Failed to load resource: the server responded with a status of 404 ()\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[\"Failed to load resource: the server responded with a status of 404 ()\"]\u001b[39m",
+                        "stack": "Error: Console errors on /admin: Failed to load resource: the server responded with a status of 404 ()\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[\"Failed to load resource: the server responded with a status of 404 ()\"]\u001b[39m\n    at C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e\\routes.spec.ts:71:105",
+                        "location": {
+                          "file": "C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e\\routes.spec.ts",
+                          "column": 105,
+                          "line": 71
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 69 |\u001b[39m         \u001b[36mreturn\u001b[39m \u001b[36mtrue\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 70 |\u001b[39m       })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 71 |\u001b[39m       expect(actualConsoleErrors\u001b[33m,\u001b[39m \u001b[32m`Console errors on ${route.path}: ${actualConsoleErrors.join(\", \")}`\u001b[39m)\u001b[33m.\u001b[39mtoHaveLength(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 72 |\u001b[39m       expect(failedRequests\u001b[33m,\u001b[39m \u001b[32m`Failed requests on ${route.path}: ${failedRequests.join(\", \")}`\u001b[39m)\u001b[33m.\u001b[39mtoHaveLength(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 73 |\u001b[39m\n \u001b[90m 74 |\u001b[39m       \u001b[90m// 2. No horizontal scroll\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e\\routes.spec.ts",
+                            "column": 105,
+                            "line": 71
+                          },
+                          "message": "Error: Console errors on /admin: Failed to load resource: the server responded with a status of 404 ()\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[\"Failed to load resource: the server responded with a status of 404 ()\"]\u001b[39m\n\n  69 |         return true;\n  70 |       });\n> 71 |       expect(actualConsoleErrors, `Console errors on ${route.path}: ${actualConsoleErrors.join(\", \")}`).toHaveLength(0);\n     |                                                                                                         ^\n  72 |       expect(failedRequests, `Failed requests on ${route.path}: ${failedRequests.join(\", \")}`).toHaveLength(0);\n  73 |\n  74 |       // 2. No horizontal scroll\n    at C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e\\routes.spec.ts:71:105"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T13:48:15.383Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\hp\\Desktop\\rizq-website\\test-results\\routes-Route-Integrity-Con-a6938-production-demo-constraints-desktop-chrome\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\hp\\Desktop\\rizq-website\\test-results\\routes-Route-Integrity-Con-a6938-production-demo-constraints-desktop-chrome\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e\\routes.spec.ts",
+                        "column": 105,
+                        "line": 71
+                      }
+                    },
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 2350,
+                      "error": {
+                        "message": "Error: Console errors on /admin: Failed to load resource: the server responded with a status of 404 ()\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[\"Failed to load resource: the server responded with a status of 404 ()\"]\u001b[39m",
+                        "stack": "Error: Console errors on /admin: Failed to load resource: the server responded with a status of 404 ()\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[\"Failed to load resource: the server responded with a status of 404 ()\"]\u001b[39m\n    at C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e\\routes.spec.ts:71:105",
+                        "location": {
+                          "file": "C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e\\routes.spec.ts",
+                          "column": 105,
+                          "line": 71
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 69 |\u001b[39m         \u001b[36mreturn\u001b[39m \u001b[36mtrue\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 70 |\u001b[39m       })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 71 |\u001b[39m       expect(actualConsoleErrors\u001b[33m,\u001b[39m \u001b[32m`Console errors on ${route.path}: ${actualConsoleErrors.join(\", \")}`\u001b[39m)\u001b[33m.\u001b[39mtoHaveLength(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 72 |\u001b[39m       expect(failedRequests\u001b[33m,\u001b[39m \u001b[32m`Failed requests on ${route.path}: ${failedRequests.join(\", \")}`\u001b[39m)\u001b[33m.\u001b[39mtoHaveLength(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 73 |\u001b[39m\n \u001b[90m 74 |\u001b[39m       \u001b[90m// 2. No horizontal scroll\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e\\routes.spec.ts",
+                            "column": 105,
+                            "line": 71
+                          },
+                          "message": "Error: Console errors on /admin: Failed to load resource: the server responded with a status of 404 ()\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[\"Failed to load resource: the server responded with a status of 404 ()\"]\u001b[39m\n\n  69 |         return true;\n  70 |       });\n> 71 |       expect(actualConsoleErrors, `Console errors on ${route.path}: ${actualConsoleErrors.join(\", \")}`).toHaveLength(0);\n     |                                                                                                         ^\n  72 |       expect(failedRequests, `Failed requests on ${route.path}: ${failedRequests.join(\", \")}`).toHaveLength(0);\n  73 |\n  74 |       // 2. No horizontal scroll\n    at C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e\\routes.spec.ts:71:105"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-10-17T13:48:19.227Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\hp\\Desktop\\rizq-website\\test-results\\routes-Route-Integrity-Con-a6938-production-demo-constraints-desktop-chrome-retry1\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\hp\\Desktop\\rizq-website\\test-results\\routes-Route-Integrity-Con-a6938-production-demo-constraints-desktop-chrome-retry1\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\hp\\Desktop\\rizq-website\\test-results\\routes-Route-Integrity-Con-a6938-production-demo-constraints-desktop-chrome-retry1\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e\\routes.spec.ts",
+                        "column": 105,
+                        "line": 71
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "598fdabf36083b33787e-3c2990c1d968808746f2",
+              "file": "routes.spec.ts",
+              "line": 32,
+              "column": 9
+            },
+            {
+              "title": "Route /non-existent-stay-404 (404 Page) satisfies all production & demo constraints",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 12,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 2556,
+                      "error": {
+                        "message": "Error: locator.getAttribute: Error: strict mode violation: locator('meta[name=\"robots\"]') resolved to 3 elements:\n    1) <meta name=\"robots\" content=\"noindex\"/> aka locator('meta[name=\"robots\"]').first()\n    2) <meta name=\"robots\" content=\"noindex,nofollow\"/> aka locator('meta[name=\"robots\"]').nth(1)\n    3) <meta name=\"robots\" content=\"noindex, nofollow\"/> aka locator('meta[name=\"robots\"]').nth(2)\n\nCall log:\n\u001b[2m  - waiting for locator('meta[name=\"robots\"]')\u001b[22m\n",
+                        "stack": "Error: locator.getAttribute: Error: strict mode violation: locator('meta[name=\"robots\"]') resolved to 3 elements:\n    1) <meta name=\"robots\" content=\"noindex\"/> aka locator('meta[name=\"robots\"]').first()\n    2) <meta name=\"robots\" content=\"noindex,nofollow\"/> aka locator('meta[name=\"robots\"]').nth(1)\n    3) <meta name=\"robots\" content=\"noindex, nofollow\"/> aka locator('meta[name=\"robots\"]').nth(2)\n\nCall log:\n\u001b[2m  - waiting for locator('meta[name=\"robots\"]')\u001b[22m\n\n    at C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e\\routes.spec.ts:100:68",
+                        "location": {
+                          "file": "C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e\\routes.spec.ts",
+                          "column": 68,
+                          "line": 100
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  98 |\u001b[39m\n \u001b[90m  99 |\u001b[39m       \u001b[90m// 5. Meta robots noindex,nofollow present\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 100 |\u001b[39m       \u001b[36mconst\u001b[39m robotsMeta \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'meta[name=\"robots\"]'\u001b[39m)\u001b[33m.\u001b[39mgetAttribute(\u001b[32m\"content\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 101 |\u001b[39m       expect(robotsMeta\u001b[33m?\u001b[39m\u001b[33m.\u001b[39mreplace(\u001b[35m/\\s+/g\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"\"\u001b[39m)\u001b[33m.\u001b[39mtoLowerCase())\u001b[33m.\u001b[39mtoBe(\u001b[32m\"noindex,nofollow\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 102 |\u001b[39m\n \u001b[90m 103 |\u001b[39m       \u001b[90m// 6. Demo ribbon is visible\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e\\routes.spec.ts",
+                            "column": 68,
+                            "line": 100
+                          },
+                          "message": "Error: locator.getAttribute: Error: strict mode violation: locator('meta[name=\"robots\"]') resolved to 3 elements:\n    1) <meta name=\"robots\" content=\"noindex\"/> aka locator('meta[name=\"robots\"]').first()\n    2) <meta name=\"robots\" content=\"noindex,nofollow\"/> aka locator('meta[name=\"robots\"]').nth(1)\n    3) <meta name=\"robots\" content=\"noindex, nofollow\"/> aka locator('meta[name=\"robots\"]').nth(2)\n\nCall log:\n\u001b[2m  - waiting for locator('meta[name=\"robots\"]')\u001b[22m\n\n\n   98 |\n   99 |       // 5. Meta robots noindex,nofollow present\n> 100 |       const robotsMeta = await page.locator('meta[name=\"robots\"]').getAttribute(\"content\");\n      |                                                                    ^\n  101 |       expect(robotsMeta?.replace(/\\s+/g, \"\").toLowerCase()).toBe(\"noindex,nofollow\");\n  102 |\n  103 |       // 6. Demo ribbon is visible\n    at C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e\\routes.spec.ts:100:68"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T13:48:23.563Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\hp\\Desktop\\rizq-website\\test-results\\routes-Route-Integrity-Con-93a8b-production-demo-constraints-desktop-chrome\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\hp\\Desktop\\rizq-website\\test-results\\routes-Route-Integrity-Con-93a8b-production-demo-constraints-desktop-chrome\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e\\routes.spec.ts",
+                        "column": 68,
+                        "line": 100
+                      }
+                    },
+                    {
+                      "workerIndex": 13,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 2218,
+                      "error": {
+                        "message": "Error: locator.getAttribute: Error: strict mode violation: locator('meta[name=\"robots\"]') resolved to 3 elements:\n    1) <meta name=\"robots\" content=\"noindex\"/> aka locator('meta[name=\"robots\"]').first()\n    2) <meta name=\"robots\" content=\"noindex,nofollow\"/> aka locator('meta[name=\"robots\"]').nth(1)\n    3) <meta name=\"robots\" content=\"noindex, nofollow\"/> aka locator('meta[name=\"robots\"]').nth(2)\n\nCall log:\n\u001b[2m  - waiting for locator('meta[name=\"robots\"]')\u001b[22m\n",
+                        "stack": "Error: locator.getAttribute: Error: strict mode violation: locator('meta[name=\"robots\"]') resolved to 3 elements:\n    1) <meta name=\"robots\" content=\"noindex\"/> aka locator('meta[name=\"robots\"]').first()\n    2) <meta name=\"robots\" content=\"noindex,nofollow\"/> aka locator('meta[name=\"robots\"]').nth(1)\n    3) <meta name=\"robots\" content=\"noindex, nofollow\"/> aka locator('meta[name=\"robots\"]').nth(2)\n\nCall log:\n\u001b[2m  - waiting for locator('meta[name=\"robots\"]')\u001b[22m\n\n    at C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e\\routes.spec.ts:100:68",
+                        "location": {
+                          "file": "C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e\\routes.spec.ts",
+                          "column": 68,
+                          "line": 100
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  98 |\u001b[39m             \u001b[33m.\u001b[39mwaitForFunction((el\u001b[33m:\u001b[39m \u001b[33mHTMLImageElement\u001b[39m) \u001b[33m=>\u001b[39m el\u001b[33m.\u001b[39mcomplete \u001b[33m&&\u001b[39m el\u001b[33m.\u001b[39mnaturalWidth \u001b[33m>\u001b[39m \u001b[35m0\u001b[39m\u001b[33m,\u001b[39m handle\u001b[33m,\u001b[39m {\n \u001b[90m  99 |\u001b[39m               timeout\u001b[33m:\u001b[39m \u001b[35m6000\u001b[39m\u001b[33m,\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 100 |\u001b[39m             })\n \u001b[90m     |\u001b[39m               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 101 |\u001b[39m             \u001b[33m.\u001b[39mthen(() \u001b[33m=>\u001b[39m \u001b[36mtrue\u001b[39m)\n \u001b[90m 102 |\u001b[39m             \u001b[33m.\u001b[39m\u001b[36mcatch\u001b[39m(\u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 103 |\u001b[39m               \u001b[36mreturn\u001b[39m \u001b[36mawait\u001b[39m img\u001b[33m.\u001b[39mevaluate((el\u001b[33m:\u001b[39m \u001b[33mHTMLImageElement\u001b[39m) \u001b[33m=>\u001b[39m el\u001b[33m.\u001b[39mcomplete \u001b[33m&&\u001b[39m el\u001b[33m.\u001b[39mnaturalWidth \u001b[33m>\u001b[39m \u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e\\routes.spec.ts",
+                            "column": 68,
+                            "line": 100
+                          },
+                          "message": "Error: locator.getAttribute: Error: strict mode violation: locator('meta[name=\"robots\"]') resolved to 3 elements:\n    1) <meta name=\"robots\" content=\"noindex\"/> aka locator('meta[name=\"robots\"]').first()\n    2) <meta name=\"robots\" content=\"noindex,nofollow\"/> aka locator('meta[name=\"robots\"]').nth(1)\n    3) <meta name=\"robots\" content=\"noindex, nofollow\"/> aka locator('meta[name=\"robots\"]').nth(2)\n\nCall log:\n\u001b[2m  - waiting for locator('meta[name=\"robots\"]')\u001b[22m\n\n\n   98 |             .waitForFunction((el: HTMLImageElement) => el.complete && el.naturalWidth > 0, handle, {\n   99 |               timeout: 6000,\n> 100 |             })\n      |               ^\n  101 |             .then(() => true)\n  102 |             .catch(async () => {\n  103 |               return await img.evaluate((el: HTMLImageElement) => el.complete && el.naturalWidth > 0);\n    at C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e\\routes.spec.ts:100:68"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-10-17T13:48:28.199Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\hp\\Desktop\\rizq-website\\test-results\\routes-Route-Integrity-Con-93a8b-production-demo-constraints-desktop-chrome-retry1\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\hp\\Desktop\\rizq-website\\test-results\\routes-Route-Integrity-Con-93a8b-production-demo-constraints-desktop-chrome-retry1\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\hp\\Desktop\\rizq-website\\test-results\\routes-Route-Integrity-Con-93a8b-production-demo-constraints-desktop-chrome-retry1\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\hp\\Desktop\\rizq-website\\tests\\e2e\\routes.spec.ts",
+                        "column": 68,
+                        "line": 100
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "598fdabf36083b33787e-443bc83c2678d4183abb",
+              "file": "routes.spec.ts",
+              "line": 32,
+              "column": 9
+            },
+            {
+              "title": "GET /robots.txt disallows all in demo mode",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "desktop-chrome",
+                  "projectName": "desktop-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 14,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 264,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-17T13:48:32.495Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "598fdabf36083b33787e-8b4c01ed51cc4f58a805",
+              "file": "routes.spec.ts",
+              "line": 143,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-17T13:47:23.733Z",
+    "duration": 69122.20899999999,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 7,
+    "flaky": 0
+  }
+}

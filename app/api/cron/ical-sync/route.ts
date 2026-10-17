@@ -9,7 +9,7 @@ export async function POST(req: NextRequest) {
   const authHeader = req.headers.get("authorization");
   const providedSecret = authHeader?.replace(/^Bearer\s+/i, "");
 
-  if (process.env.NODE_ENV === "production" && process.env.CRON_SECRET && providedSecret !== CRON_SECRET) {
+  if (providedSecret !== CRON_SECRET) {
     return NextResponse.json({ error: "Unauthorized cron execution" }, { status: 401 });
   }
 

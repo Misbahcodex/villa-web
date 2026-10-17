@@ -9,7 +9,7 @@ const OWNER_CHAT_ID = process.env.TELEGRAM_CHAT_ID;
 export async function POST(req: NextRequest) {
   // 1. Verify Secret Token Header
   const secretHeader = req.headers.get("x-telegram-bot-api-secret-token");
-  if (process.env.NODE_ENV === "production" && process.env.TELEGRAM_WEBHOOK_SECRET && secretHeader !== WEBHOOK_SECRET) {
+  if (secretHeader !== WEBHOOK_SECRET) {
     return NextResponse.json({ error: "Unauthorized Telegram webhook secret" }, { status: 401 });
   }
 
@@ -40,7 +40,8 @@ export async function POST(req: NextRequest) {
 
   // 2. Validate Chat ID (Only accept from the designated owner chat)
   const chatId = String(query.message.chat.id);
-  if (OWNER_CHAT_ID && chatId !== String(OWNER_CHAT_ID)) {
+  const allowedOwnerChat = OWNER_CHAT_ID ? String(OWNER_CHAT_ID) : "123456789";
+  if (chatId !== allowedOwnerChat) {
     await answerTelegramCallbackQuery(query.id, "Unauthorized user");
     return NextResponse.json({ error: "Forbidden chat" }, { status: 403 });
   }

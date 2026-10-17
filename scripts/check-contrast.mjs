@@ -64,29 +64,39 @@ function getContrastRatio(hex1, hex2) {
 
 // Pairs to evaluate with role and minimum WCAG requirement
 const PAIRS = [
+  // --- ARCHITECTURAL DARK LUXURY PALETTE ---
+  { fg: 'ivory-text', fgHex: '#F2E9DD', bg: 'bg-base', bgHex: '#10100F', role: 'Dark: Heading (Base)', min: 4.5 },
+  { fg: 'ivory-text', fgHex: '#F2E9DD', bg: 'bg-surface', bgHex: '#171716', role: 'Dark: Heading (Surface)', min: 4.5 },
+  { fg: 'ivory-text', fgHex: '#F2E9DD', bg: 'bg-elevated', bgHex: '#20201E', role: 'Dark: Heading (Elevated)', min: 4.5 },
+  { fg: 'muted-taupe', fgHex: '#A7A097', bg: 'bg-base', bgHex: '#10100F', role: 'Dark: Body (Base)', min: 4.5 },
+  { fg: 'muted-taupe', fgHex: '#A7A097', bg: 'bg-surface', bgHex: '#171716', role: 'Dark: Body (Surface)', min: 4.5 },
+  { fg: 'accent-bronze', fgHex: '#C99A69', bg: 'bg-base', bgHex: '#10100F', role: 'Dark: Accent Label (Base)', min: 4.5 },
+  { fg: 'bg-base', fgHex: '#10100F', bg: 'accent-bronze', bgHex: '#C99A69', role: 'Dark: Button Text on CTA', min: 3.0 },
+
+  // --- URBAN SLATE LIGHT THEME PAIRS ---
   // Primary Headings / Text on Light Backgrounds (>= 4.5:1)
-  { fg: 'text-primary', fgHex: TOKENS['text-primary'], bg: 'bg-base', bgHex: TOKENS['bg-base'], role: 'Heading (Page Base)', min: 4.5 },
-  { fg: 'text-primary', fgHex: TOKENS['text-primary'], bg: 'bg-surface', bgHex: TOKENS['bg-surface'], role: 'Heading (White Card)', min: 4.5 },
-  { fg: 'text-primary', fgHex: TOKENS['text-primary'], bg: 'bg-light', bgHex: TOKENS['bg-light'], role: 'Heading (Soft Pearl)', min: 4.5 },
+  { fg: 'text-primary', fgHex: TOKENS['text-primary'], bg: 'bg-base', bgHex: TOKENS['bg-base'], role: 'Light: Heading (Base)', min: 4.5 },
+  { fg: 'text-primary', fgHex: TOKENS['text-primary'], bg: 'bg-surface', bgHex: TOKENS['bg-surface'], role: 'Light: Heading (Card)', min: 4.5 },
+  { fg: 'text-primary', fgHex: TOKENS['text-primary'], bg: 'bg-light', bgHex: TOKENS['bg-light'], role: 'Light: Heading (Pearl)', min: 4.5 },
 
   // Body Copy on Light Backgrounds (>= 4.5:1)
-  { fg: 'text-body', fgHex: TOKENS['text-body'], bg: 'bg-base', bgHex: TOKENS['bg-base'], role: 'Body (Page Base)', min: 4.5 },
-  { fg: 'text-body', fgHex: TOKENS['text-body'], bg: 'bg-surface', bgHex: TOKENS['bg-surface'], role: 'Body (White Card)', min: 4.5 },
-  { fg: 'text-body', fgHex: TOKENS['text-body'], bg: 'bg-light', bgHex: TOKENS['bg-light'], role: 'Body (Soft Pearl)', min: 4.5 },
+  { fg: 'text-body', fgHex: TOKENS['text-body'], bg: 'bg-base', bgHex: TOKENS['bg-base'], role: 'Light: Body (Base)', min: 4.5 },
+  { fg: 'text-body', fgHex: TOKENS['text-body'], bg: 'bg-surface', bgHex: TOKENS['bg-surface'], role: 'Light: Body (Card)', min: 4.5 },
+  { fg: 'text-body', fgHex: TOKENS['text-body'], bg: 'bg-light', bgHex: TOKENS['bg-light'], role: 'Light: Body (Pearl)', min: 4.5 },
 
   // Links & Slate Blue Text (>= 4.5:1)
-  { fg: 'text-link', fgHex: TOKENS['text-link'], bg: 'bg-base', bgHex: TOKENS['bg-base'], role: 'Links/Interactive (Base)', min: 4.5 },
-  { fg: 'text-link', fgHex: TOKENS['text-link'], bg: 'bg-surface', bgHex: TOKENS['bg-surface'], role: 'Links/Interactive (Card)', min: 4.5 },
-  { fg: 'text-link', fgHex: TOKENS['text-link'], bg: 'bg-light', bgHex: TOKENS['bg-light'], role: 'Links/Interactive (Pearl)', min: 4.5 },
+  { fg: 'text-link', fgHex: TOKENS['text-link'], bg: 'bg-base', bgHex: TOKENS['bg-base'], role: 'Light: Links (Base)', min: 4.5 },
+  { fg: 'text-link', fgHex: TOKENS['text-link'], bg: 'bg-surface', bgHex: TOKENS['bg-surface'], role: 'Light: Links (Card)', min: 4.5 },
+  { fg: 'text-link', fgHex: TOKENS['text-link'], bg: 'bg-light', bgHex: TOKENS['bg-light'], role: 'Light: Links (Pearl)', min: 4.5 },
 
   // Buttons & CTAs (UI Components / Bold Text >= 3.0:1)
-  { fg: 'text-on-accent', fgHex: TOKENS['text-on-accent'], bg: 'accent', bgHex: TOKENS['accent'], role: 'Button Text (Accent CTA)', min: 3.0 },
-  { fg: 'text-on-accent', fgHex: TOKENS['text-on-accent'], bg: 'accent-strong', bgHex: TOKENS['accent-strong'], role: 'Button Text (Hover CTA)', min: 3.0 },
+  { fg: 'text-on-accent', fgHex: TOKENS['text-on-accent'], bg: 'accent', bgHex: TOKENS['accent'], role: 'Light: Button Text (Accent)', min: 3.0 },
+  { fg: 'text-on-accent', fgHex: TOKENS['text-on-accent'], bg: 'accent-strong', bgHex: TOKENS['accent-strong'], role: 'Light: Button Text (Hover)', min: 3.0 },
 
   // Large Text & Muted Captions (>= 3.0:1)
-  { fg: 'text-muted', fgHex: TOKENS['text-muted'], bg: 'bg-base', bgHex: TOKENS['bg-base'], role: 'Large Text (Page Base)', min: 3.0 },
-  { fg: 'text-muted', fgHex: TOKENS['text-muted'], bg: 'bg-surface', bgHex: TOKENS['bg-surface'], role: 'Large Text (White Card)', min: 3.0 },
-  { fg: 'text-muted', fgHex: TOKENS['text-muted'], bg: 'bg-light', bgHex: TOKENS['bg-light'], role: 'Large Text (Soft Pearl)', min: 3.0 },
+  { fg: 'text-muted', fgHex: TOKENS['text-muted'], bg: 'bg-base', bgHex: TOKENS['bg-base'], role: 'Light: Large Text (Base)', min: 3.0 },
+  { fg: 'text-muted', fgHex: TOKENS['text-muted'], bg: 'bg-surface', bgHex: TOKENS['bg-surface'], role: 'Light: Large Text (Card)', min: 3.0 },
+  { fg: 'text-muted', fgHex: TOKENS['text-muted'], bg: 'bg-light', bgHex: TOKENS['bg-light'], role: 'Light: Large Text (Pearl)', min: 3.0 },
 ];
 
 console.log('\n========================================================================================');

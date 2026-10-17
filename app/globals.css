@@ -43,6 +43,8 @@
     scroll-behavior: smooth;
     background-color: #10100F;
     color: #F2E9DD;
+    overflow-x: hidden;
+    max-width: 100vw;
   }
 
   body {
@@ -52,6 +54,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
+    max-width: 100vw;
   }
 
   /* Architectural Serif Display Headings */

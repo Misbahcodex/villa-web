@@ -4,26 +4,10 @@ import { useEffect, useState } from "react";
 import { siteConfig } from "@/data/site";
 
 export function TrustStrip() {
-  const [reviewCount, setReviewCount] = useState(2000);
+  const [reviewCount, setReviewCount] = useState(siteConfig.rating.reviews);
 
   useEffect(() => {
-    const target = siteConfig.rating.reviews;
-    const duration = 1200;
-    const steps = 30;
-    const increment = (target - 2000) / steps;
-    let current = 2000;
-
-    const timer = setInterval(() => {
-      current += increment;
-      if (current >= target) {
-        setReviewCount(target);
-        clearInterval(timer);
-      } else {
-        setReviewCount(Math.floor(current));
-      }
-    }, duration / steps);
-
-    return () => clearInterval(timer);
+    setReviewCount(siteConfig.rating.reviews);
   }, []);
 
   const stats = [
