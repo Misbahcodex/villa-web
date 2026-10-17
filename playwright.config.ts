@@ -31,6 +31,7 @@ export default defineConfig({
       name: "iphone-13",
       use: {
         ...devices["iPhone 13"],
+        defaultBrowserType: "chromium",
         channel: "chrome",
       },
     },

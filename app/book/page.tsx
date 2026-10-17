@@ -5,6 +5,9 @@ import { siteConfig } from "@/data/site";
 import { RoomId } from "@/types";
 import { validRoomIds } from "@/lib/validation";
 import { propertyPolicies, showPolicy } from "@/data/policies";
+import { getPropertyFacts } from "@/lib/db/store";
+
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Direct Reservation & Booking",
@@ -21,8 +24,9 @@ interface BookingPageProps {
   };
 }
 
-export default function BookPage({ searchParams }: BookingPageProps) {
+export default async function BookPage({ searchParams }: BookingPageProps) {
   const isDemo = process.env.NEXT_PUBLIC_DEMO_MODE === "true";
+  const liveFacts = await getPropertyFacts();
   const requestedRoom = searchParams.room;
   const initialRoomId: RoomId =
     typeof requestedRoom === "string" && (validRoomIds as readonly string[]).includes(requestedRoom)
@@ -81,6 +85,7 @@ export default function BookPage({ searchParams }: BookingPageProps) {
                 initialCheckIn={initialCheckIn}
                 initialCheckOut={initialCheckOut}
                 initialGuests={initialGuests}
+                initialPolicies={liveFacts}
               />
             </Suspense>
           </div>
@@ -140,13 +145,14 @@ export default function BookPage({ searchParams }: BookingPageProps) {
                 <span className="font-sans font-medium">{siteConfig.locationNote}</span>
               </div>
               <div className="pt-2 border-t border-subtle text-[11px] text-muted-dark">
-                {propertyPolicies.checkInWindow.status === "confirmed" && propertyPolicies.checkOutTime.status === "confirmed" ? (
+                {((liveFacts.checkInWindow?.status || propertyPolicies.checkInWindow.status) === "confirmed" &&
+                  (liveFacts.checkOutTime?.status || propertyPolicies.checkOutTime.status) === "confirmed") ? (
                   <div className="flex justify-between">
-                    <span>Check-In: {showPolicy(propertyPolicies.checkInWindow)}</span>
-                    <span>Check-Out: {showPolicy(propertyPolicies.checkOutTime)}</span>
+                    <span>Check-In: {showPolicy(liveFacts.checkInWindow || propertyPolicies.checkInWindow)}</span>
+                    <span>Check-Out: {showPolicy(liveFacts.checkOutTime || propertyPolicies.checkOutTime)}</span>
                   </div>
                 ) : (
-                  <span>{showPolicy(propertyPolicies.checkInWindow, "Times confirmed when your booking is accepted")}</span>
+                  <span>{showPolicy(liveFacts.checkInWindow || propertyPolicies.checkInWindow, "Times confirmed when your booking is accepted")}</span>
                 )}
               </div>
             </div>

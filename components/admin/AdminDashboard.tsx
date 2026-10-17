@@ -378,7 +378,7 @@ export function AdminDashboard({ initialAuthenticated }: AdminDashboardProps) {
             </button>
           </form>
 
-          <p className="text-[11px] text-[#8A827C] text-center">
+          <p className="text-[11px] text-[#C8C2BC] text-center">
             Default demo password: <code className="text-accent">demo_admin_2026</code>
           </p>
         </div>

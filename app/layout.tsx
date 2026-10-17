@@ -111,6 +111,7 @@ export default function RootLayout({
         )}
       </head>
       <body className="bg-base text-on-dark min-h-screen flex flex-col font-sans antialiased selection:bg-accent selection:text-umber-950">
+        <DemoRibbon />
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />

@@ -24,6 +24,7 @@ interface BookingWidgetProps {
   initialCheckIn?: string;
   initialCheckOut?: string;
   initialGuests?: number;
+  initialPolicies?: Record<string, any>;
 }
 
 export function BookingWidget({
@@ -31,7 +32,9 @@ export function BookingWidget({
   initialCheckIn,
   initialCheckOut,
   initialGuests = 1,
+  initialPolicies,
 }: BookingWidgetProps) {
+  const policies = { ...propertyPolicies, ...initialPolicies };
   const errorAlertId = useId();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showDatePicker, setShowDatePicker] = useState(false);
@@ -100,6 +103,14 @@ export function BookingWidget({
 
   const selectedRoomId = watch("roomId");
   const adultsCount = watch("adults");
+  const guestName = watch("guestName");
+  const guestPhone = watch("guestPhone");
+  const isContactValid = Boolean(
+    guestName &&
+    guestName.trim().length >= 2 &&
+    guestPhone &&
+    guestPhone.replace(/\D/g, "").length >= 7
+  );
   const currentRoom = rooms.find((r) => r.id === selectedRoomId) || rooms[0];
 
   // Fetch live availability whenever dates or room change
@@ -201,7 +212,7 @@ export function BookingWidget({
       checkOut: data.checkOut,
       nights: pricing.nights,
       adults: data.adults,
-      minGuestAge: propertyPolicies.minGuestAge.value || 18,
+      minGuestAge: policies.minGuestAge.value || 18,
       promoCode: data.promoCode,
       discountPercent: siteConfig.discountPercent,
       estimatedTotalAED: pricing.totalAED,
@@ -399,18 +410,18 @@ export function BookingWidget({
         <div className="flex items-center gap-2">
           <span>•</span>
           <span>
-            Check-in: <strong>{showPolicy(propertyPolicies.checkInWindow)}</strong>
+            Check-in: <strong>{showPolicy(policies.checkInWindow)}</strong>
           </span>
         </div>
         <div>
-          Check-out: <strong>{showPolicy(propertyPolicies.checkOutTime)}</strong>
+          Check-out: <strong>{showPolicy(policies.checkOutTime)}</strong>
         </div>
         <div className="text-accent flex items-center gap-1.5">
           <span>•</span>
           <span>
             Adults Only
-            {propertyPolicies.minGuestAge.status === "confirmed" && propertyPolicies.minGuestAge.value
-              ? ` (${propertyPolicies.minGuestAge.value}+)`
+            {policies.minGuestAge.status === "confirmed" && policies.minGuestAge.value
+              ? ` (${policies.minGuestAge.value}+)`
               : ""}
           </span>
         </div>
@@ -430,7 +441,6 @@ export function BookingWidget({
           <button
             type="button"
             aria-expanded={showDatePicker}
-            aria-label="Select check-in date"
             onClick={() => setShowDatePicker(!showDatePicker)}
             className="bg-base border border-subtle hover:border-accent/50 px-4 py-3 rounded-sm text-left flex items-center justify-between transition-colors"
           >
@@ -448,7 +458,6 @@ export function BookingWidget({
           <button
             type="button"
             aria-expanded={showDatePicker}
-            aria-label="Select check-out date"
             onClick={() => setShowDatePicker(!showDatePicker)}
             className="bg-base border border-subtle hover:border-accent/50 px-4 py-3 rounded-sm text-left flex items-center justify-between transition-colors"
           >
@@ -672,8 +681,8 @@ export function BookingWidget({
 
         {/* Single line under the guest selector */}
         <div className="text-[11px] text-muted-dark px-1">
-          {propertyPolicies.minGuestAge.status === "confirmed" && propertyPolicies.minGuestAge.value
-            ? `Adults only property. Guests must be ${propertyPolicies.minGuestAge.value}+.`
+          {policies.minGuestAge.status === "confirmed" && policies.minGuestAge.value
+            ? `Adults only property. Guests must be ${policies.minGuestAge.value}+.`
             : "Adults only property."}
         </div>
 
@@ -687,7 +696,7 @@ export function BookingWidget({
             id="adults-age-confirmation-checkbox"
           />
           <span className="text-xs text-on-dark select-none font-sans font-light">
-            All guests are {propertyPolicies.minGuestAge.value || 18} or older.
+            All guests are {policies.minGuestAge.value || 18} or older.
           </span>
         </label>
 
@@ -868,6 +877,7 @@ export function BookingWidget({
             isSubmitting ||
             pricing.nights <= 0 ||
             !isAdultsConfirmed ||
+            !isContactValid ||
             (availability && !availability.isAvailable)
           )}
           className="w-full bg-accent hover:bg-accent-strong disabled:opacity-40 disabled:cursor-not-allowed text-base py-3.5 px-6 rounded-sm text-xs font-medium uppercase tracking-widest transition-all duration-200 flex items-center justify-center gap-2 shadow-xl"

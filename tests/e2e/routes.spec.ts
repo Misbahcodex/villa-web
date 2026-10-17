@@ -35,7 +35,8 @@ test.describe("Route Integrity & Content QA Suite", () => {
 
       page.on("console", (msg) => {
         if (msg.type() === "error") {
-          consoleErrors.push(msg.text());
+          const loc = msg.location();
+          consoleErrors.push(`${msg.text()} (${loc.url}:${loc.lineNumber})`);
         }
       });
 
