@@ -1,0 +1,188 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* =========================================================
+     Architectural Luxury Palette (Exact Reference Spec)
+     ========================================================= */
+  --color-base: #10100F;              /* Deep architectural black base */
+  --color-surface: #171716;           /* Primary surface / card background */
+  --color-surface-elevated: #20201E;  /* Elevated surfaces & modals */
+  --color-border-subtle: #34312D;     /* Fine architectural hairline borders */
+  --color-on-dark: #F2E9DD;           /* Warm pearl ivory typography */
+  --color-muted-dark: #A7A097;        /* Muted taupe grey secondary typography */
+  --color-accent: #C99A69;            /* Primary refined bronze accent */
+  --color-accent-strong: #B78A5B;     /* Muted gold / active pressed accent */
+  --color-accent-cool: #77746E;       /* Subtle neutral stone / tertiary accent */
+  --color-success: #3E7B52;           /* Confirmed / success tone */
+
+  /* Compatibility aliases */
+  --color-soft-pearl: #F2E9DD;
+  --color-warm-umber: #171716;
+  --color-slate-grey: #A7A097;
+  --color-warm-taupe: #C99A69;
+  --color-slate-blue: #77746E;
+  --color-umber-950: #10100F;
+  --color-umber-900: #171716;
+  --color-umber-800: #34312D;
+  --color-pearl-50: #F2E9DD;
+  --color-slate-blue-700: #77746E;
+  --color-light: #171716;
+  --color-light-alt: #20201E;
+  --color-on-light: #F2E9DD;
+  --color-muted-light: #A7A097;
+}
+
+@layer base {
+  * {
+    border-color: #34312D;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: #10100F;
+    color: #F2E9DD;
+  }
+
+  body {
+    background-color: #10100F;
+    color: #F2E9DD;
+    font-family: var(--font-inter), sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  /* Architectural Serif Display Headings */
+  .font-display {
+    font-family: var(--font-cormorant), Georgia, serif;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+  }
+
+  ::selection {
+    background-color: #C99A69;
+    color: #10100F;
+  }
+
+  :focus-visible {
+    outline: 1px solid #C99A69;
+    outline-offset: 2px;
+  }
+}
+
+/* Subtle architectural grid pattern */
+.bg-grid-subtle {
+  background-image: linear-gradient(to right, rgba(52, 49, 45, 0.3) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(52, 49, 45, 0.3) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #10100F;
+}
+::-webkit-scrollbar-thumb {
+  background: #34312D;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C99A69;
+}
+
+/* Form autofill styling */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: #F2E9DD;
+  -webkit-box-shadow: 0 0 0px 1000px #171716 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+/* react-day-picker theming */
+.rdp {
+  --rdp-cell-size: 38px;
+  --rdp-accent-color: #C99A69;
+  --rdp-background-color: rgba(201, 154, 105, 0.15);
+  margin: 0 !important;
+}
+
+.rdp-months {
+  justify-content: center;
+}
+
+.rdp-day {
+  color: #F2E9DD;
+  border-radius: 2px;
+  font-size: 13px;
+}
+
+.rdp-day:hover:not(.rdp-day_selected):not(.rdp-day_disabled) {
+  background-color: #34312D !important;
+  color: #F2E9DD !important;
+}
+
+.rdp-day_selected {
+  background-color: #C99A69 !important;
+  color: #10100F !important;
+  font-weight: 600;
+}
+
+.rdp-day_selected.rdp-day_range_middle {
+  background-color: rgba(201, 154, 105, 0.15) !important;
+  color: #F2E9DD !important;
+  border-radius: 0 !important;
+}
+
+.rdp-day_disabled {
+  opacity: 0.2;
+  cursor: not-allowed !important;
+}
+
+.rdp-button:focus-visible:not([disabled]) {
+  outline: 1px solid #C99A69;
+}
+
+.rdp-nav_button {
+  color: #C99A69;
+}
+
+.rdp-head_cell {
+  color: #A7A097;
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+.rdp-caption_label {
+  font-family: var(--font-cormorant), Georgia, serif;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #F2E9DD;
+}
+
+/* Prefers-reduced-motion compliance */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

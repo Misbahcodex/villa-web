@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="poolSectionBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F6F4F5"/>
+      <stop offset="100%" stop-color="#E9E6E7"/>
+    </linearGradient>
+    <linearGradient id="waterSurface" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#6B7C98" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#4F5E78" stop-opacity="0.7"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#poolSectionBg)"/>
+  
+  <!-- Architectural Villa Walls Framing Courtyard -->
+  <rect x="80" y="80" width="1040" height="300" fill="#FFFFFF" stroke="#D8D4D6" stroke-width="1.5"/>
+  <rect x="140" y="140" width="180" height="240" fill="#F6F4F5" stroke="#6B7C98" stroke-width="1" stroke-opacity="0.5"/>
+  <rect x="880" y="140" width="180" height="240" fill="#F6F4F5" stroke="#6B7C98" stroke-width="1" stroke-opacity="0.5"/>
+  
+  <!-- Pool Basin -->
+  <polygon points="180,400 1020,400 1120,660 80,660" fill="url(#waterSurface)" stroke="#6B7C98" stroke-width="1.5"/>
+  <!-- Pool Ripple Lines -->
+  <path d="M260 480 Q 600 460 940 480" stroke="#FFFFFF" stroke-width="1.5" stroke-opacity="0.7" fill="none"/>
+  <path d="M200 550 Q 600 530 1000 550" stroke="#FFFFFF" stroke-width="1.5" stroke-opacity="0.5" fill="none"/>
+  <path d="M150 610 Q 600 590 1050 610" stroke="#FFFFFF" stroke-width="1.5" stroke-opacity="0.4" fill="none"/>
+
+  <!-- Typography -->
+  <text x="600" y="730" font-family="'Cormorant Garamond', serif" font-size="28" font-weight="600" fill="#1C1816" text-anchor="middle">Outdoor Pool</text>
+</svg>

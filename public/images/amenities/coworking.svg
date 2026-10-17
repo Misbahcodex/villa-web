@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cwBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F6F4F5"/>
+      <stop offset="100%" stop-color="#E9E6E7"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#cwBg)"/>
+  
+  <!-- Architectural loft rafters & oak workstations -->
+  <line x1="100" y1="120" x2="1100" y2="120" stroke="#AB978C" stroke-width="2"/>
+  <line x1="300" y1="0" x2="300" y2="120" stroke="#AB978C" stroke-width="2"/>
+  <line x1="600" y1="0" x2="600" y2="120" stroke="#AB978C" stroke-width="2"/>
+  <line x1="900" y1="0" x2="900" y2="120" stroke="#AB978C" stroke-width="2"/>
+  
+  <!-- Main Workstation Tables -->
+  <polygon points="120,440 1080,440 1140,540 60,540" fill="#FFFFFF" stroke="#6B7C98" stroke-width="1.5" stroke-opacity="0.6"/>
+  <!-- Laptop Screens on Desk -->
+  <rect x="220" y="380" width="100" height="60" rx="3" fill="#FFFFFF" stroke="#7B7F8A" stroke-width="1.5"/>
+  <rect x="550" y="370" width="120" height="70" rx="3" fill="#FFFFFF" stroke="#7B7F8A" stroke-width="1.5"/>
+  <rect x="880" y="380" width="100" height="60" rx="3" fill="#FFFFFF" stroke="#7B7F8A" stroke-width="1.5"/>
+  
+  <!-- Large 500 Mbps Speed Callout Graphic -->
+  <g transform="translate(450, 160)">
+    <circle cx="150" cy="80" r="70" fill="#FFFFFF" stroke="#6B7C98" stroke-width="3"/>
+    <path d="M100 110 A 60 60 0 1 1 200 110" fill="none" stroke="#6B7C98" stroke-width="8" stroke-linecap="round"/>
+    <text x="150" y="75" font-family="'Inter', sans-serif" font-size="28" font-weight="800" fill="#1C1816" text-anchor="middle">500</text>
+    <text x="150" y="98" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#4F5E78" letter-spacing="2" text-anchor="middle">MBPS WI-FI</text>
+  </g>
+  
+  <!-- Work Pods in Background -->
+  <rect x="1000" y="200" width="140" height="240" rx="4" fill="#FFFFFF" stroke="#D8D4D6" stroke-width="1.5"/>
+  <rect x="60" y="200" width="140" height="240" rx="4" fill="#FFFFFF" stroke="#D8D4D6" stroke-width="1.5"/>
+  
+  <!-- Bottom Caption -->
+  <text x="600" y="700" font-family="'Cormorant Garamond', serif" font-size="28" font-weight="600" fill="#1C1816" text-anchor="middle">Coworking Space</text>
+</svg>

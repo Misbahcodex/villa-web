@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="mapBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F6F4F5"/>
+      <stop offset="100%" stop-color="#E9E6E7"/>
+    </linearGradient>
+    <radialGradient id="pinGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#6B7C98" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#6B7C98" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="1200" height="800" fill="url(#mapBg)"/>
+  
+  <!-- Dubai Waterway / Dubai Canal representation -->
+  <path d="M-50 220 C 350 200, 700 350, 1250 280" stroke="#6B7C98" stroke-opacity="0.35" stroke-width="64" fill="none" stroke-linecap="round"/>
+  <path d="M-50 220 C 350 200, 700 350, 1250 280" stroke="#FFFFFF" stroke-width="6" fill="none" stroke-dasharray="16 16"/>
+
+  <!-- Major Highway Grids (Sheikh Zayed Road / Al Khail Road) -->
+  <line x1="100" y1="0" x2="500" y2="800" stroke="#AB978C" stroke-opacity="0.6" stroke-width="12"/>
+  <line x1="500" y1="0" x2="1100" y2="800" stroke="#AB978C" stroke-opacity="0.6" stroke-width="10"/>
+  <line x1="0" y1="420" x2="1200" y2="520" stroke="#AB978C" stroke-opacity="0.5" stroke-width="8"/>
+  <line x1="0" y1="620" x2="1200" y2="700" stroke="#AB978C" stroke-opacity="0.5" stroke-width="6"/>
+
+  <!-- Secondary Urban Grid Lines -->
+  <path d="M150 150 L450 150 L520 400 L250 400 Z" fill="#FFFFFF" stroke="#D8D4D6" stroke-width="1.5"/>
+  <path d="M600 120 L1050 120 L980 320 L580 300 Z" fill="#FFFFFF" stroke="#D8D4D6" stroke-width="1.5"/>
+  <path d="M350 450 L750 480 L700 700 L300 660 Z" fill="#FFFFFF" stroke="#D8D4D6" stroke-width="1.5"/>
+  <path d="M800 420 L1150 440 L1100 680 L780 650 Z" fill="#FFFFFF" stroke="#D8D4D6" stroke-width="1.5"/>
+
+  <!-- District Labels -->
+  <text x="880" y="180" font-family="'Inter', sans-serif" font-size="13" font-weight="600" fill="#5E5653" letter-spacing="4">DOWNTOWN DUBAI &amp; BURJ KHALIFA</text>
+  <text x="760" y="270" font-family="'Inter', sans-serif" font-size="12" font-weight="500" fill="#5E5653" letter-spacing="3">BUSINESS BAY</text>
+  <text x="220" y="620" font-family="'Inter', sans-serif" font-size="12" font-weight="500" fill="#5E5653" letter-spacing="3">AL QUOZ</text>
+  
+  <!-- Rizq Villa Pinpoint -->
+  <circle cx="560" cy="460" r="80" fill="url(#pinGlow)"/>
+  <circle cx="560" cy="460" r="16" fill="#6B7C98"/>
+  <circle cx="560" cy="460" r="6" fill="#FFFFFF"/>
+  
+  <!-- Pin Label Card -->
+  <rect x="420" y="370" width="280" height="58" rx="4" fill="#FFFFFF" stroke="#6B7C98" stroke-width="1.5"/>
+  <text x="560" y="394" font-family="'Cormorant Garamond', serif" font-size="17" font-weight="700" fill="#1C1816" text-anchor="middle">RIZQ LUXURIOUS VILLA</text>
+  <text x="560" y="414" font-family="'Inter', sans-serif" font-size="11" fill="#5E5653" letter-spacing="1.5" text-anchor="middle">25.1575° N, 55.2702° E</text>
+  
+  <!-- Compass / North Marker -->
+  <g transform="translate(1120, 60)">
+    <circle cx="0" cy="0" r="24" fill="#FFFFFF" stroke="#7B7F8A" stroke-width="1"/>
+    <line x1="0" y1="16" x2="0" y2="-16" stroke="#6B7C98" stroke-width="2"/>
+    <polygon points="0,-16 -4,-4 4,-4" fill="#6B7C98"/>
+    <text x="0" y="-22" font-family="'Inter', sans-serif" font-size="10" font-weight="bold" fill="#6B7C98" text-anchor="middle">N</text>
+  </g>
+</svg>

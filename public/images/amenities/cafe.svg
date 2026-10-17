@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cafeBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E9E6E7"/>
+      <stop offset="100%" stop-color="#E9E6E7"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#cafeBg)"/>
+  
+  <!-- Architectural Espresso Bar & Lounge Layout -->
+  <rect x="150" y="100" width="900" height="420" rx="4" fill="#E9E6E7" stroke="#5E5653" stroke-width="1.5"/>
+  <rect x="250" y="320" width="700" height="140" rx="3" fill="#E9E6E7" stroke="#6B7C98" stroke-width="1.5"/>
+  <!-- Espresso Machine Outline -->
+  <rect x="350" y="240" width="140" height="80" rx="4" fill="#E9E6E7" stroke="#6B7C98" stroke-width="1"/>
+  <circle cx="420" cy="270" r="14" fill="#6B7C98"/>
+  <!-- Coffee Cups & Steam -->
+  <rect x="540" y="270" width="40" height="50" rx="4" fill="#AB978C"/>
+  <rect x="620" y="270" width="40" height="50" rx="4" fill="#AB978C"/>
+  
+  <!-- Warm Pendant Lights Hanging Over Bar -->
+  <line x1="320" y1="100" x2="320" y2="200" stroke="#6B7C98" stroke-width="2"/>
+  <circle cx="320" cy="205" r="16" fill="#6B7C98"/>
+  <line x1="600" y1="100" x2="600" y2="180" stroke="#6B7C98" stroke-width="2"/>
+  <circle cx="600" cy="185" r="16" fill="#6B7C98"/>
+  <line x1="880" y1="100" x2="880" y2="200" stroke="#6B7C98" stroke-width="2"/>
+  <circle cx="880" cy="205" r="16" fill="#6B7C98"/>
+
+  <!-- Typography -->
+  <text x="600" y="640" font-family="'Cormorant Garamond', serif" font-size="28" fill="#AB978C" text-anchor="middle">Social Lounge &amp; Café</text>
+</svg>

@@ -1,0 +1,209 @@
+{
+  "hero-main": {
+    "slot": "hero-main",
+    "src": "/images/hero-villa.jpg",
+    "fallbackSrc": "/images/hero-villa.svg",
+    "alt": "Exterior twilight view of Rizq Luxurious Villa and pool",
+    "width": 2326,
+    "height": 1273,
+    "focalPoint": "50% 40%",
+    "status": "provided",
+    "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAJABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAIF/8QAIBAAAgIBAwUAAAAAAAAAAAAAAQIDEQAEIjEyQVFxgf/EABQBAQAAAAAAAAAAAAAAAAAAAAP/xAAYEQEAAwEAAAAAAAAAAAAAAAABABExAv/aAAwDAQACEQMRAD8AGGLSERMKtQv3k46CeRJArqjRqdxqzXnMjTda5c3f0MNer2KBWT//2Q=="
+  },
+  "exterior-front": {
+    "slot": "exterior-front",
+    "src": "/images/hero-villa.svg",
+    "fallbackSrc": "/images/hero-villa.svg",
+    "alt": "Front facade and entrance of Rizq Luxurious Villa",
+    "width": 1200,
+    "height": 800,
+    "focalPoint": "50% 50%",
+    "status": "missing"
+  },
+  "pool-main": {
+    "slot": "pool-main",
+    "src": "/images/amenities/pool.svg",
+    "fallbackSrc": "/images/amenities/pool.svg",
+    "alt": "Outdoor swimming pool with loungers",
+    "width": 1200,
+    "height": 800,
+    "focalPoint": "50% 50%",
+    "status": "missing"
+  },
+  "pool-detail": {
+    "slot": "pool-detail",
+    "src": "/images/amenities/pool.svg",
+    "fallbackSrc": "/images/amenities/pool.svg",
+    "alt": "Close-up detail of outdoor pool and seating",
+    "width": 1200,
+    "height": 800,
+    "focalPoint": "50% 50%",
+    "status": "missing"
+  },
+  "coworking-main": {
+    "slot": "coworking-main",
+    "src": "/images/meetting-room.jpg",
+    "fallbackSrc": "/images/amenities/coworking.svg",
+    "alt": "Coworking space with work tables and seating",
+    "width": 4160,
+    "height": 2340,
+    "focalPoint": "50% 50%",
+    "status": "provided",
+    "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAJABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAgMEBf/EACAQAAICAQMFAAAAAAAAAAAAAAECAAMRBCExEjVxcrH/xAAUAQEAAAAAAAAAAAAAAAAAAAAC/8QAFxEBAQEBAAAAAAAAAAAAAAAAAQARIf/aAAwDAQACEQMRAD8A2X11qrYzPWipuzY2A8mNNNt4Sw2LgrkdSDiDb29vYfZa3AgDezb/2Q=="
+  },
+  "coworking-detail": {
+    "slot": "coworking-detail",
+    "src": "/images/amenities/coworking.svg",
+    "fallbackSrc": "/images/amenities/coworking.svg",
+    "alt": "Work desk setup with power access for laptops",
+    "width": 1200,
+    "height": 800,
+    "focalPoint": "50% 50%",
+    "status": "missing"
+  },
+  "cafe-main": {
+    "slot": "cafe-main",
+    "src": "/images/living-and-dining-space.jpg",
+    "fallbackSrc": "/images/amenities/cafe.svg",
+    "alt": "Social lounge and dining space with communal seating",
+    "width": 2752,
+    "height": 1536,
+    "focalPoint": "50% 50%",
+    "status": "provided",
+    "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAJABADASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABAb/xAAiEAACAgEBCQAAAAAAAAAAAAABAgMEACEFIjI0YXJzsdH/xAAUAQEAAAAAAAAAAAAAAAAAAAAD/8QAFREBAQAAAAAAAAAAAAAAAAAAACH/2gAMAwEAAhEDEQA/AGXLypdiQRNJG+hYAEL8we2pmc13JG+up6ZMJxP2ZW1OSi8Y9YUpX//Z"
+  },
+  "cafe-detail": {
+    "slot": "cafe-detail",
+    "src": "/images/modern-kitchen.jpg",
+    "fallbackSrc": "/images/amenities/cafe.svg",
+    "alt": "Resident kitchen and coffee counter area",
+    "width": 2752,
+    "height": 1536,
+    "focalPoint": "50% 50%",
+    "status": "provided",
+    "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAJABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAgQF/8QAIRAAAQQABgMAAAAAAAAAAAAAAQACAxEEBSEiMXFCUWH/xAAUAQEAAAAAAAAAAAAAAAAAAAAE/8QAGREAAgMBAAAAAAAAAAAAAAAAAQIAESES/9oADAMBAAIRAxEAPwC9kryHC42Ve7nT39QlxcspdI3Esmoa7aIWNF49lDMeGdlCTkocjmsONn//2Q=="
+  },
+  "lounge-community": {
+    "slot": "lounge-community",
+    "src": "/images/amenities/cafe.svg",
+    "fallbackSrc": "/images/amenities/cafe.svg",
+    "alt": "Communal lounge area for villa residents",
+    "width": 1200,
+    "height": 800,
+    "focalPoint": "50% 50%",
+    "status": "missing"
+  },
+  "single-capsule-1": {
+    "slot": "single-capsule-1",
+    "src": "/images/rooms/single-capsule-1.svg",
+    "fallbackSrc": "/images/rooms/single-capsule-1.svg",
+    "alt": "Premium Single Capsule Pod sleeping compartment",
+    "width": 1200,
+    "height": 800,
+    "focalPoint": "50% 50%",
+    "status": "missing"
+  },
+  "single-capsule-2": {
+    "slot": "single-capsule-2",
+    "src": "/images/rooms/single-capsule-2.svg",
+    "fallbackSrc": "/images/rooms/single-capsule-2.svg",
+    "alt": "Interior view of single capsule pod with bedding and lighting",
+    "width": 1200,
+    "height": 800,
+    "focalPoint": "50% 50%",
+    "status": "missing"
+  },
+  "single-capsule-3": {
+    "slot": "single-capsule-3",
+    "src": "/images/rooms/single-capsule-3.svg",
+    "fallbackSrc": "/images/rooms/single-capsule-3.svg",
+    "alt": "Capsule pod corridor and storage locker area",
+    "width": 1200,
+    "height": 800,
+    "focalPoint": "50% 50%",
+    "status": "missing"
+  },
+  "double-capsule-1": {
+    "slot": "double-capsule-1",
+    "src": "/images/rizq-villa-luxury-dorm.jpg",
+    "fallbackSrc": "/images/rooms/double-capsule-1.svg",
+    "alt": "Deluxe Double Capsule Pod with double bedding",
+    "width": 2400,
+    "height": 1792,
+    "focalPoint": "50% 50%",
+    "status": "provided",
+    "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAMABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAID/8QAIhAAAgEDBAIDAAAAAAAAAAAAAQIDAAQREyExQQUSIpHB/8QAFQEBAQAAAAAAAAAAAAAAAAAAAwT/xAAWEQEBAQAAAAAAAAAAAAAAAAABAEH/2gAMAwEAAhEDEQA/AGSX9uJI5VUuEPy2x33n9q2niluVkK6YckqpGOBWGnGI9IIvpyVxzRvMyyC1aQOQy7fdTg7Nf//Z"
+  },
+  "double-capsule-2": {
+    "slot": "double-capsule-2",
+    "src": "/images/rooms/double-capsule-2.svg",
+    "fallbackSrc": "/images/rooms/double-capsule-2.svg",
+    "alt": "Double capsule pod interior showing tech shelf and lighting",
+    "width": 1200,
+    "height": 800,
+    "focalPoint": "50% 50%",
+    "status": "missing"
+  },
+  "double-capsule-3": {
+    "slot": "double-capsule-3",
+    "src": "/images/rooms/double-capsule-3.svg",
+    "fallbackSrc": "/images/rooms/double-capsule-3.svg",
+    "alt": "Double capsule pod bay view",
+    "width": 1200,
+    "height": 800,
+    "focalPoint": "50% 50%",
+    "status": "missing"
+  },
+  "executive-suite-1": {
+    "slot": "executive-suite-1",
+    "src": "/images/rooms/executive-suite-1.svg",
+    "fallbackSrc": "/images/rooms/executive-suite-1.svg",
+    "alt": "Executive Private Suite bedroom with master bed",
+    "width": 1200,
+    "height": 800,
+    "focalPoint": "50% 50%",
+    "status": "missing"
+  },
+  "executive-suite-2": {
+    "slot": "executive-suite-2",
+    "src": "/images/rooms/executive-suite-2.svg",
+    "fallbackSrc": "/images/rooms/executive-suite-2.svg",
+    "alt": "Executive Private Suite work desk and seating",
+    "width": 1200,
+    "height": 800,
+    "focalPoint": "50% 50%",
+    "status": "missing"
+  },
+  "executive-suite-3": {
+    "slot": "executive-suite-3",
+    "src": "/images/bathroom.jpg",
+    "fallbackSrc": "/images/rooms/executive-suite-3.svg",
+    "alt": "Suite bathroom facilities with walk-in shower and vanity",
+    "width": 2400,
+    "height": 1792,
+    "focalPoint": "50% 50%",
+    "status": "provided",
+    "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAMABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQQG/8QAIRAAAgEDAwUAAAAAAAAAAAAAAQIDAAQhERIxBQYiYXH/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/EABURAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIRAxEAPwDQwTF41Zdz+IO7TnHNS3l8qRStKWCxoS+PlKqAEHuiO5YkHRrggAE6AkDOSKmmP//Z"
+  },
+  "location-view": {
+    "slot": "location-view",
+    "src": "/images/location-map.svg",
+    "fallbackSrc": "/images/location-map.svg",
+    "alt": "Dubai skyline and Downtown district view near the villa",
+    "width": 1200,
+    "height": 800,
+    "focalPoint": "50% 50%",
+    "status": "missing"
+  },
+  "og-share": {
+    "slot": "og-share",
+    "src": "/images/hero-villa.jpg",
+    "fallbackSrc": "/images/hero-villa.svg",
+    "alt": "Rizq Luxurious Villa Dubai social preview",
+    "width": 2326,
+    "height": 1273,
+    "focalPoint": "50% 40%",
+    "status": "provided",
+    "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCAAJABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAIF/8QAIBAAAgIBAwUAAAAAAAAAAAAAAQIDEQAEIjEyQVFxgf/EABQBAQAAAAAAAAAAAAAAAAAAAAP/xAAYEQEAAwEAAAAAAAAAAAAAAAABABExAv/aAAwDAQACEQMRAD8AGGLSERMKtQv3k46CeRJArqjRqdxqzXnMjTda5c3f0MNer2KBWT//2Q=="
+  }
+}

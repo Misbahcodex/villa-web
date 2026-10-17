@@ -1,0 +1,185 @@
+{
+  "roomTypes": [
+    {
+      "id": "premium-single-capsule",
+      "slug": "single-capsule",
+      "name": "Premium Single Capsule Pod",
+      "unitsTotal": 8,
+      "baseRateAED": 180,
+      "maxGuests": 1
+    },
+    {
+      "id": "deluxe-double-capsule",
+      "slug": "double-capsule",
+      "name": "Deluxe Double Capsule Pod",
+      "unitsTotal": 6,
+      "baseRateAED": 260,
+      "maxGuests": 2
+    },
+    {
+      "id": "executive-private-suite",
+      "slug": "private-suite",
+      "name": "Executive Private Suite",
+      "unitsTotal": 1,
+      "baseRateAED": 540,
+      "maxGuests": 2
+    }
+  ],
+  "bookings": [
+    {
+      "id": "b-1792173836892-nhu2z",
+      "ref": "RZQ-FJRQJ5",
+      "roomTypeId": "executive-private-suite",
+      "checkIn": "2026-12-01",
+      "checkOut": "2026-12-05",
+      "adults": 2,
+      "children": 0,
+      "guestName": "Concurrent Guest 1",
+      "guestPhone": "+971 50 000 0000",
+      "guestEmail": "guest1@test.com",
+      "notes": "Simultaneous test request #1",
+      "promoCode": "RIZQDIRECT",
+      "estimatedTotalAED": 2160,
+      "addons": [],
+      "status": "pending",
+      "holdExpiresAt": "2026-10-17T06:03:56.892Z",
+      "source": "website",
+      "createdAt": "2026-10-16T18:03:56.892Z",
+      "updatedAt": "2026-10-16T18:03:56.892Z"
+    }
+  ],
+  "blocks": [],
+  "icalFeeds": [
+    {
+      "id": "feed-001",
+      "roomTypeId": "executive-private-suite",
+      "url": "https://calendar.google.com/calendar/ical/sample-ota-feed/public/basic.ics",
+      "label": "Partner Calendar / OTA Export",
+      "lastSyncedAt": "2026-10-16T11:17:44.426Z",
+      "lastStatus": "success",
+      "createdAt": "2026-10-11T13:17:44.426Z"
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "log-1792173836892-wmghn",
+      "bookingId": "b-1792173836892-nhu2z",
+      "actor": "guest",
+      "action": "created_pending_hold",
+      "meta": {
+        "ref": "RZQ-FJRQJ5",
+        "holdExpiresAt": "2026-10-17T06:03:56.892Z",
+        "nights": 4,
+        "source": "website"
+      },
+      "createdAt": "2026-10-16T18:03:56.892Z"
+    },
+    {
+      "id": "log-cleared-1792173836883",
+      "actor": "admin",
+      "action": "cleared_demo_data",
+      "meta": {
+        "timestamp": "2026-10-16T18:03:56.883Z"
+      },
+      "createdAt": "2026-10-16T18:03:56.883Z"
+    }
+  ],
+  "propertyFacts": {
+    "checkInWindow": {
+      "value": null,
+      "status": "conflicting",
+      "sources": [
+        "Listing A: 09:00–23:00",
+        "Listing B: 13:30–22:30",
+        "Listing C: 15:00–00:00"
+      ],
+      "note": "Arrival windows conflict across third-party channels."
+    },
+    "checkOutTime": {
+      "value": null,
+      "status": "conflicting",
+      "sources": [
+        "Listing A: 11:00",
+        "Listing B: 12:00"
+      ],
+      "note": "Check-out time varies between 11:00 and 12:00 across third-party channels."
+    },
+    "adultsOnly": {
+      "value": true,
+      "status": "confirmed",
+      "sources": [
+        "Multiple booking listings state children are not allowed at this property."
+      ],
+      "note": "Strictly adults-only property."
+    },
+    "minGuestAge": {
+      "value": 18,
+      "status": "unconfirmed",
+      "sources": [
+        "Listings suggest 18, but exact cutoff must be confirmed with owner."
+      ],
+      "note": "Exact age cutoff pending approval by property owner."
+    },
+    "outdoorPool": {
+      "value": true,
+      "status": "confirmed",
+      "sources": [
+        "Client brief: outdoor swimming pool."
+      ]
+    },
+    "coworking": {
+      "value": true,
+      "status": "confirmed",
+      "sources": [
+        "Client brief: coworking desks inside the villa."
+      ]
+    },
+    "socialLounge": {
+      "value": true,
+      "status": "confirmed",
+      "sources": [
+        "Client brief: shared social lounge and café area."
+      ]
+    },
+    "wifiMbps": {
+      "value": 500,
+      "status": "confirmed",
+      "sources": [
+        "Client brief: high-speed 500 Mbps connection."
+      ]
+    },
+    "freeParking": {
+      "value": null,
+      "status": "unconfirmed",
+      "sources": [
+        "Mentioned in some descriptions, parking availability unconfirmed."
+      ],
+      "note": "On-site parking spaces vs street parking unconfirmed."
+    },
+    "selfServeLaundry": {
+      "value": null,
+      "status": "unconfirmed",
+      "sources": [
+        "Mentioned in some descriptions as self-serve laundry, unconfirmed."
+      ],
+      "note": "Washer/dryer availability and fees unconfirmed."
+    },
+    "gym": {
+      "value": null,
+      "status": "unconfirmed",
+      "sources": [
+        "Unconfirmed facility."
+      ],
+      "note": "No gym or fitness equipment verified on property."
+    },
+    "shuttle": {
+      "value": null,
+      "status": "unconfirmed",
+      "sources": [
+        "Mentioned in some listings, no official vehicle or schedule confirmed."
+      ],
+      "note": "Transfer service unconfirmed; request only."
+    }
+  },
+  "blockedPhoneNumbers": []
+}
